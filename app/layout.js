@@ -1,29 +1,29 @@
-import Script from 'next/script'
-import '../styles/globals.css'
-import Head from 'next/head'
+import Script from "next/script"
+import "../styles/globals.css"
+import Head from "next/head"
 
 export const metadata = {
-  title: 'Integrated solutions to shape social equity | CMS',
+  title: "Integrated solutions to shape social equity | CMS",
   description:
-    'We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration.',
-  metadataBase: new URL('https://cms.org.in'),
+    "We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration.",
+  metadataBase: new URL("https://cms.org.in"),
   openGraph: {
-    url: 'https://cms.org.in',
-    title: 'Integrated solutions to shape social equity | CMS',
+    url: "https://cms.org.in",
+    title: "Integrated solutions to shape social equity | CMS",
     description:
-      'We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration.',
+      "We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration.",
     images: [
       {
-        url: '/social.png',
+        url: "/social.png",
         width: 800,
         height: 600,
-        alt: 'CMS',
+        alt: "CMS",
       },
     ],
   },
   icons: {
-    icon: '/favicon.png',
-    shortcut: '/favicon.ico',
+    icon: "/favicon.png",
+    shortcut: "/favicon.ico",
   },
 }
 
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="robots" content="index, nofollow" />
+        <meta name="robots" content="index, follow" />
       </head>
       <body>
         <main className="flex flex-col min-h-screen">
