@@ -22,6 +22,9 @@ module.exports = {
         "cms-secondary-gray": "#CBCBCB",
         "cms-primary-green": "#00AE8E",
         "cms-secondary-green": "#D7EEE8",
+        "shoonya-green": "#05AC8D",
+        "shoonya-purple": "#7F3F97",
+        "shoonya-black": "#141414",
       },
       listStyleType: {
         square: "square",
