@@ -37,3 +37,25 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+/* Custom styles for Slick dots */
+.slick-dots {
+  bottom: 10px; /* Positioning of the dots */
+}
+
+.slick-dots li {
+  margin: 0 5px; /* Space between dots */
+}
+
+.slick-dots li button {
+  width: 10px; /* Width of each dot */
+  height: 10px; /* Height of each dot */
+  border-radius: 50%; /* Make it circular */
+  background-color: #ccc; /* Default color */
+  opacity: 1; /* Ensure visibility */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.slick-dots li.slick-active button {
+  background-color: #a1b300; /* Active dot color */
+}
