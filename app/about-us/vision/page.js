@@ -44,20 +44,9 @@ const page = () => {
         </div>
       </div>
 
-      {/* <div className="text-center flex flex-col items-center gap-3 mb-10">
-        <h3 className="text-cms-primary-black text-lg">About CMS</h3>
-        <h2 className="text-cms-primary-black text-3xl">
-          We create an impact that is transformational, <br /> driving
-          sustainable and scalable equity.
-        </h2>
-      </div> */}
-
       <Tab heading="Vision" desc={desc} />
 
       <div className="my-10 md:my-16">
-        {/* <div className="max-w-screen-xl mx-auto">
-          <Vision />
-        </div> */}
         <Mission />
       </div>
 

@@ -54,12 +54,6 @@ const page = () => {
     "Our Wellbeing for Workforce practice strives to make wellbeing a reality for first-mile workers and reach 100 million workers by 2030. We are committed to the Wellbeing of the Workforce, their families, and communities."
   return (
     <>
-      {/* <NextSeo
-        title="Making worker wellbeing a reality | Wellbeing for Workforce"
-        description="We strive to make worker wellbeing a reality through large scale implementation of transformation models"
-        path="https://cms.org.in/domain-areas/workforce-wellbeing"
-        metaImage=""
-      /> */}
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/domainAreas/workforce/banner.png')] h-[420px] md:h-[640px] bg-center bg-cover pt-5 flex flex-col">
         <div className="w-full">
           <Header />

@@ -3,8 +3,6 @@ import Tab from "@/components/AboutUs/Tab/Tab"
 import Team from "@/components/AboutUs/Team/Team"
 import Footer from "@/components/Footer/Footer"
 import Header from "@/components/Header/Header"
-import NextSeo from "@/components/Seo/Seo"
-import Image from "next/image"
 import React from "react"
 
 export function generateMetadata() {
@@ -35,12 +33,6 @@ const page = () => {
     "Our team consists of dedicated mentors, impact specialists, and business experts. Meet the dedicated team at CMS, blending deep industry knowledge with a relentless pursuit of positive social change."
   return (
     <>
-      {/* <NextSeo
-        title="Our Team | Creating impact collectiviley"
-        description="Our team partners with multi-disciplinary teams to tackle challenges and maximise social returns"
-        path="https://cms.org.in/about-us/team"
-        metaImage=""
-      /> */}
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/banner/banner02.png')] flex flex-col justify-center md:justify-end h-[420px] md:h-[480px] w-full bg-center bg-cover py-10 md:py-16">
         <Header />
         <div className="ps-2 md:ps-24">
@@ -49,14 +41,6 @@ const page = () => {
           </h1>
         </div>
       </div>
-
-      {/* <div className="text-center flex flex-col items-center gap-3 mb-10">
-        <p className="text-cms-primary-black text-lg">About CMS</p>
-        <h2 className="text-cms-primary-black text-2xl">
-          We create an impact that is transformational, <br /> driving
-          sustainable and scalable equity.
-        </h2>
-      </div> */}
 
       <Tab heading="Change Makers in Action" desc={desc} />
 

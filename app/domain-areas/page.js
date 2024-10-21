@@ -60,12 +60,6 @@ export function generateMetadata() {
 const page = () => {
   return (
     <>
-      {/* <NextSeo
-        title="Supporting Enterprises & Vulnerable Communities through Domain Areas"
-        description="Expertise in enterprise support, healthcare, and first-mile worker wellbeing, focusing on livelihood, health, ESG, and climate change resilience."
-        path="https://cms.org.in/about-us/domain-areas"
-        metaImage=""
-      /> */}
       <div className="bg-[url('/domainAreas/banner.png')] flex flex-col justify-center md:justify-end h-[420px] md:h-[480px] w-full bg-center bg-cover py-10 md:py-16">
         <Header />
         <div className="ps-2 md:ps-24">

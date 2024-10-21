@@ -7,8 +7,6 @@ import Overview from "@/components/DomainAreas/Overview/Overview"
 import Footer from "@/components/Footer/Footer"
 import Header from "@/components/Header/Header"
 import RelatedResources from "@/components/RelatedResources/RelatedResources"
-import NextSeo from "@/components/Seo/Seo"
-import Tab from "@/components/Tab/Tab"
 import Image from "next/image"
 import React from "react"
 
@@ -73,12 +71,6 @@ const page = () => {
     "We have 25 years of experience as a global social impact consulting firm and use a 360-degree approach that improves the well-being of vulnerable communities. CMS and its sister organisation, Swasti, a global south public health agency, partner with communities at the last mile to help them realise their potential through health and well-being. We work towards achieving Universal Health Care and Global Health Security through a Climate x Health centric approach and ensure our programmes are climate-responsive."
   return (
     <>
-      {/* <NextSeo
-        title="Strengthening health and community systems | Health"
-        description="We focus on strengthening health and community systems to achieve Universal Health Coverage, health equity quality primary care for all"
-        path="https://cms.org.in/domain-areas/health"
-        metaImage=""
-      /> */}
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/domainAreas/health/banner.png')] h-[420px] md:h-[640px] bg-center bg-cover pt-5 flex flex-col">
         <div className="w-full">
           <Header />

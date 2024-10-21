@@ -32,12 +32,6 @@ const page = () => {
     "Over the last two decades, we have worked with a range of stakeholders, like CSOs, banks, corporate foundations, academic institutions, funding agencies, community organisations, multilateral and bilateral agencies, networks, governments, and non-profits."
   return (
     <>
-      {/* <NextSeo
-        title="Collaborating for Change: Our Partners in Social Impact"
-        description="Partnering with diverse stakeholders for over two decades, driving social impact through collaboration with CSOs, banks, foundations, governments, and global agencies."
-        path="https://cms.org.in/about-us/partners"
-        metaImage=""
-      /> */}
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/banner/banner04.png')] flex flex-col justify-center md:justify-end h-[420px] md:h-[480px] w-full bg-center bg-cover py-10 md:py-16">
         <Header />
         <div className="ps-2 md:ps-24">
@@ -47,19 +41,7 @@ const page = () => {
         </div>
       </div>
 
-      {/* <div className="text-center flex flex-col items-center gap-3 mb-10">
-        <p className="text-cms-primary-black text-lg">About CMS</p>
-        <h2 className="text-cms-primary-black text-2xl">
-          We create an impact that is transformational, <br /> driving
-          sustainable and scalable equity.
-        </h2>
-      </div> */}
-
       <Tab heading="Collaborating for Change" desc={desc} />
-
-      {/* <div className="hidden md:block">
-        <Partners />
-      </div> */}
 
       <div>
         <HomePartners />

@@ -43,12 +43,6 @@ export function generateMetadata() {
 const page = () => {
   return (
     <>
-      {/* <NextSeo
-        title="Collaborative Initiatives for Social Equity and Inclusion"
-        description="CMS drives impactful initiatives, ensuring vulnerable communities gain access to essential services and fostering sustainable development with social equity."
-        path="https://cms.org.in/collaborative-initiatives"
-        metaImage=""
-      /> */}
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/collaborativeInitiatives/banner.png')] flex flex-col justify-center md:justify-end h-[420px] md:h-[480px] bg-center bg-cover py-10 md:py-16">
         <Header />
         <div className="ps-2 md:ps-24">
