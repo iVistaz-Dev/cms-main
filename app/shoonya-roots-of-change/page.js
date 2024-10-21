@@ -13,7 +13,7 @@ export function generateMetadata() {
         "Be part of Shoonya's tree growth initiative focused on native tree growth and reforestation in fragile eco-zones for long-term environmental impact.",
       images: [
         {
-          url: "/social.png",
+          url: "socialShare.png",
           width: 800,
           height: 600,
           alt: "CMS",
