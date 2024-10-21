@@ -1,41 +1,30 @@
-"use client"
-
 import Footer from "@/components/Footer/Footer"
 import Header from "@/components/Header/Header"
-import NextSeo from "@/components/Seo/Seo"
-import Image from "next/image"
-import React, { useState } from "react"
+
+export function generateMetadata() {
+  return {
+    title: "Privacy Policy",
+    description: "Our Privacy Policy for legal obligations",
+    metadataBase: new URL("https://www.cms.org.in/privacy-policy"),
+    openGraph: {
+      url: "https://www.cms.org.in/privacy-policy",
+      title: "Privacy Policy",
+      description: "Our Privacy Policy for legal obligations",
+      images: [
+        {
+          url: "/social.png",
+          width: 800,
+          height: 600,
+          alt: "CMS",
+        },
+      ],
+    },
+  }
+}
 
 const page = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-    consent: false,
-  })
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target
-    setFormData({
-      ...formData,
-      [name]: type === "checkbox" ? checked : value,
-    })
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Handle form submission logic here
-    console.log(formData)
-  }
   return (
     <>
-      <NextSeo
-        title="Privacy Policy"
-        description="Our Privacy Policy for legal obligations"
-        path="https://www.cms.org.in/privacy-policy"
-        metaImage=""
-      />
-
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/privacyPolicy/banner.png')] h-[420px] md:h-[480px] bg-cover bg-center pt-5 pb-14">
         <Header />
         <div className="max-w-screen-xl mx-auto mt-20 sm:mt-24 md:mt-32 lg:mt-48 px-2 md:px-0">
