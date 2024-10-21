@@ -16,7 +16,7 @@ export function generateMetadata() {
           url: "/socialShare.png",
           width: 800,
           height: 600,
-          alt: "CMS",
+          alt: "Shoonya Tree",
         },
       ],
     },
