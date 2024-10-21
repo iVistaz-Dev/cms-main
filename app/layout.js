@@ -12,14 +12,14 @@ export const metadata = {
     title: "Integrated solutions to shape social equity | CMS",
     description:
       "We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration.",
-    // images: [
-    //   {
-    //     url: "/social.png",
-    //     width: 800,
-    //     height: 600,
-    //     alt: "CMS",
-    //   },
-    // ],
+    images: [
+      {
+        url: "/social.png",
+        width: 800,
+        height: 600,
+        alt: "CMS",
+      },
+    ],
   },
   icons: {
     icon: "/favicon.png",
