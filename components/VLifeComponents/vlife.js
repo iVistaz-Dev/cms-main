@@ -63,7 +63,7 @@ const vlife = () => {
 
       <div className="lg:bg-[url('/Vlife/Banner2.png')] bg-[url('/Vlife/mobile-banner-2.png')] bg-cover bg-center h-[50vh] w-full z-0">
         <div>
-          <p className="lg:text-[150px] text-[54px] text-white text-center z-0 font-bold relative lg:top-[246px] top-[360px] ">
+          <p className="lg:text-[150px] text-[54px] text-white text-center z-0 font-bold relative lg:top-[246px] top-[330px] ">
             Goals of V-Life
           </p>
         </div>
