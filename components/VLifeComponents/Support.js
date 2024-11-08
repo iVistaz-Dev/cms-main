@@ -43,6 +43,7 @@ const SupportBeyondCredit = () => {
         </div>
       </div>
 
+
       <div className="container mx-auto">
         <div>
           <h2 className="text-[40px] text-[#7F3F97] font-bold text-center mt-6 py-10">
