@@ -34,13 +34,15 @@ const vlife = () => {
 
       <div className="lg:flex justify-center mt-20">
         <div>
-          <p className="text-[#7F3F97] text-[40px] lg:-rotate-90 lg:mt-36 font-bold text-center">What is V-Life</p>
+          <p className="text-[#7F3F97] text-[40px] lg:-rotate-90 lg:mt-36 font-bold text-center">
+            What is V-Life
+          </p>
         </div>
         <div className="hidden lg:block">
           <Image
             width={800}
             height={500}
-            src="/Vlife/infog1.jpg"
+            src="/Vlife/desktop-info.jpg"
             className="w-[100%]"
           />
         </div>
@@ -48,7 +50,7 @@ const vlife = () => {
           <Image
             width={350}
             height={400}
-            src="/Vlife/infog.jpg"
+            src="/Vlife/mobile-info.jpg"
             className="lg:hidden block"
           />
         </div>
