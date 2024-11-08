@@ -18,11 +18,11 @@ const Footer = () => {
     <>
       <div className="bg-[#F2F2F2]">
         <div className="text-center">
-          <h2 className="text-[#363636] text-[34px] pt-5">
+          <h2 className="text-[#363636] lg:text-[34px] text-[25px] pt-5">
             For more information, contact
           </h2>
         </div>
-        <div className="lg:px-0 px-10 flex flex-col lg:flex-row lg:justify-center lg:space-x-10 py-16 text-center lg:text-left items-start lg:items-center space-y-5 lg:space-y-0">
+        <div className="lg:px-0 px-10 flex flex-col lg:flex-row lg:justify-center lg:space-x-10 lg:py-16 py-5 text-center lg:text-left items-start lg:items-center space-y-5 lg:space-y-0">
           {phoneNumber && (
             <span className="flex items-center gap-3">
               <FaPhoneVolume className="text-[#7F3F97] text-xl" />
