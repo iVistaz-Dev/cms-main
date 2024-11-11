@@ -44,6 +44,7 @@ const InsightDetails = ({ myUrl }) => {
           desc: item.excerpt.rendered.replace(/<[^>]+>/g, ""),
           metaTitle: item.acf.meta_title,
           metaDesc: item.acf.meta_description,
+          authorName: item.acf.author_name,
         }))
         setInsightsData(formattedData)
       } catch (error) {
@@ -74,10 +75,14 @@ const InsightDetails = ({ myUrl }) => {
         <div key={item.id}>
           <div className="flex flex-col justify-end h-[320px] md:h-[400px] w-full bg-center bg-cover py-10 bg-[url('/insights/blogs/banner.png')]">
             <Header />
-            <div className="flex justify-center content-container">
+            <div className="flex flex-col justify-center content-container">
               <h1
                 className="text-xl sm:text-4xl md:text-5xl font-semibold text-white text-center px-10"
                 dangerouslySetInnerHTML={{ __html: item.title }}
+              />
+              <span
+                className="text-base sm:text-lg md:text-xl text-white text-right px-10"
+                dangerouslySetInnerHTML={{ __html: item.authorName }}
               />
             </div>
           </div>
