@@ -2228,17 +2228,17 @@ export const blogsTabs = [
     tab: "Shoonya",
     path: "80",
   },
-  {
-    id: 6,
-    tab: "Leveraging Assets",
-    path: "17",
-  },
+  // {
+  //   id: 6,
+  //   tab: "Leveraging Assets",
+  //   path: "17",
+  // },
 
-  {
-    id: 8,
-    tab: "Enabling Specialists",
-    path: "7",
-  },
+  // {
+  //   id: 8,
+  //   tab: "Enabling Specialists",
+  //   path: "7",
+  // },
   {
     id: 9,
     tab: "Community Engagement",
@@ -2250,16 +2250,16 @@ export const blogsTabs = [
     path: "86",
   },
 
-  {
-    id: 13,
-    tab: "TechTonic",
-    path: "63",
-  },
-  {
-    id: 14,
-    tab: "Transforming Investments monitor for results",
-    path: "78",
-  },
+  // {
+  //   id: 13,
+  //   tab: "TechTonic",
+  //   path: "63",
+  // },
+  // {
+  //   id: 14,
+  //   tab: "Transforming Investments monitor for results",
+  //   path: "78",
+  // },
 
   {
     id: 16,
@@ -2268,61 +2268,65 @@ export const blogsTabs = [
   },
 ]
 
-
-export const OurCommunities =[
+export const OurCommunities = [
   {
-    group : "Small & Marginal Farmers",
-    description : "Supporting them with the resources and knowledge needed to improve agricultural productivity and income stability",
+    group: "Small & Marginal Farmers",
+    description:
+      "Supporting them with the resources and knowledge needed to improve agricultural productivity and income stability",
   },
   {
-    group : "Women Entrepreneurs",
-    description : "Empowering women to take charge of their economic futures through financial independence and entrepreneurship",
+    group: "Women Entrepreneurs",
+    description:
+      "Empowering women to take charge of their economic futures through financial independence and entrepreneurship",
   },
   {
-    group : "Youth",
-    description : "Providing young people with the skills and opportunities needed to secure sustainable livelihoods in their communities",
+    group: "Youth",
+    description:
+      "Providing young people with the skills and opportunities needed to secure sustainable livelihoods in their communities",
   },
   {
-    group : "Artisans and Small Businesses",
-    description : "Enabling local artisans and small enterprises to grow and thrive in an increasingly competitive market",
+    group: "Artisans and Small Businesses",
+    description:
+      "Enabling local artisans and small enterprises to grow and thrive in an increasingly competitive market",
   },
   {
-    group : "Marginalised Communities",
-    description : "Fostering economic independence and enabling sex worker, queer, and transgender communities to invest in essential services",
-  },
-]
-
-export const FourCarousel =[
-  {
-    title : "Empowering Rural Communities:",
-    desc : "We aim to enhance the economic resilience of rural households by providing access to tailored financial products that meet their unique needs.",
-  },
-  {
-    title : "Promoting Financial Inclusion:",
-    desc : "By bridging the gap between underserved communities and formal financial services, we work to ensure that everyone can save, invest, and grow.",
-  },
-  {
-    title : "Enhancing Gender Equality:",
-    desc : "We focus on empowering women, who play a crucial role in rural economies, by providing them with the financial tools and resources needed to succeed.",
-  },
-  {
-    title : "Building Climate Resilience:",
-    desc : "Recognizing the impact of climate change on rural livelihoods, we aim to promote practices and solutions that build resilience against environmental shocks.",
+    group: "Marginalised Communities",
+    description:
+      "Fostering economic independence and enabling sex worker, queer, and transgender communities to invest in essential services",
   },
 ]
 
-export const CarouselPartners =[
+export const FourCarousel = [
   {
-    ImageUrl : "/Vlife/logo1.png"
+    title: "Empowering Rural Communities:",
+    desc: "We aim to enhance the economic resilience of rural households by providing access to tailored financial products that meet their unique needs.",
   },
   {
-    ImageUrl : "/Vlife/logo2.png"
+    title: "Promoting Financial Inclusion:",
+    desc: "By bridging the gap between underserved communities and formal financial services, we work to ensure that everyone can save, invest, and grow.",
   },
   {
-    ImageUrl : "/Vlife/logo3.png"
+    title: "Enhancing Gender Equality:",
+    desc: "We focus on empowering women, who play a crucial role in rural economies, by providing them with the financial tools and resources needed to succeed.",
   },
   {
-    ImageUrl : "/Vlife/logo4.png"
+    title: "Building Climate Resilience:",
+    desc: "Recognizing the impact of climate change on rural livelihoods, we aim to promote practices and solutions that build resilience against environmental shocks.",
+  },
+]
+
+export const CarouselPartners = [
+  {
+    ImageUrl: "/Vlife/logo1.png",
+  },
+  {
+    ImageUrl: "/Vlife/logo2.png",
+  },
+  {
+    ImageUrl: "/Vlife/logo3.png",
+  },
+  {
+    ImageUrl: "/Vlife/logo4.png",
   },
 ]
 
@@ -2381,4 +2385,4 @@ export const supportItems = [
     description:
       "Impact Evaluation: V-Life conducts regular impact assessments to measure the broader effects of its credit interventions on the livelihoods of farmers and the sustainability of FPOs. This data-driven approach ensures continuous improvement in service delivery.",
   },
-];
+]

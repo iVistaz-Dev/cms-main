@@ -1,7 +1,7 @@
 import Header from "@/components/Header/Header"
 import Footer from "@/components/Footer/Footer"
 import NextSeo from "@/components/Seo/Seo"
-import Insights from "@/components/Insights/Insights-Old"
+import Insights from "@/components/Insights/Insights"
 
 export function generateMetadata() {
   return {
