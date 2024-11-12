@@ -11,34 +11,32 @@ import Form from "../../components/VLifeComponents/Form"
 import Footer from "../../components/VLifeComponents/Footer"
 import AOS from "aos";
 import "aos/dist/aos.css";
-const page = () => {
+
+const Page = () => {
   useEffect(() => {
-    AOS.init({
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 400, // values from 0 to 3000, with step 50ms
-      easing: "ease",
-      // once: true,
-    });
-  });
-  AOS.init({
-    disable: function() {
-      var maxWidth = 800;
-      return window.innerWidth < maxWidth;
+    if (typeof window !== "undefined") {
+      AOS.init({
+        delay: 0,
+        duration: 400,
+        easing: "ease",
+        disable: () => window.innerWidth < 800,
+      });
     }
-  });
+  }, []);
+
   return (
     <div>
-        <Vlife/>
-        <CarouselVlife />
-        <OurRegion />
-        <OurCommunities />
-        <VlifeRoles />
-        <Support/>
-        <Partners/>
-        <Form />
-        <Footer/>
+      <Vlife />
+      <CarouselVlife />
+      <OurRegion />
+      <OurCommunities />
+      <VlifeRoles />
+      <Support />
+      <Partners />
+      <Form />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default page
+export default Page;
