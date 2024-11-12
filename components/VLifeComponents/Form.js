@@ -20,7 +20,7 @@ const Contact = React.forwardRef((props, ref) => {
   return (
     <div className="py-8 my-4" ref={ref}>
       <div className="flex flex-col">
-        <div className="text-center">
+        <div className="text-center" data-aos="zoom-in" data-aos-duration="">
           <h2 className="lg:text-[40px] text-[25px] text-[#7F3F97] font-bold">
             Support Lasting Change in Rural Communities
           </h2>

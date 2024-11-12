@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 
 const vlife = () => {
   return (
@@ -18,8 +19,8 @@ const vlife = () => {
         </p>
       </div>
 
-      <div>
-        <p className="text-center lg:pl-32 lg:pr-32 p-5 text-xl">
+      <div data-aos="flip-left">
+        <p className="text-center lg:pl-32 lg:pr-32 p-5 text-xl py-10">
           India’s rural landscape is rich with potential, but many communities
           face significant challenges in achieving sustainable livelihoods.
           Dependence on agriculture, limited economic opportunities, financial
@@ -32,7 +33,7 @@ const vlife = () => {
         </button>
       </div>
 
-      <div className="lg:flex justify-center lg:mt-20">
+      <div className="lg:flex justify-center lg:mt-20" data-aos="zoom-in" data-aos-duration="600">
         <div>
           <p className="text-[#7F3F97] text-[40px] lg:-rotate-90 lg:mt-36 mt-8 mb-4 font-bold text-center">
             What is V-Life
@@ -61,9 +62,9 @@ const vlife = () => {
         </button>
       </div>
 
-      <div className="lg:bg-[url('/Vlife/Banner2.png')] bg-[url('/Vlife/mobile-banner-2.png')] bg-cover bg-center h-[50vh] w-full z-0">
-        <div>
-          <p className="lg:text-[150px] text-[54px] text-white text-center z-0 font-bold relative lg:top-[246px] top-[340px] ">
+      <div data-aos="zoom-in" data-aos-duration="600" className="lg:bg-[url('/Vlife/Banner2.png')] bg-[url('/Vlife/mobile-banner-2.png')] bg-cover bg-center h-[50vh] w-full z-0 relative">
+        <div className="absolute bottom-0 w-full text-center">
+          <p className="lg:text-[150px] lg:-mb-14 -mb-5 text-[54px] text-white font-bold">
             Goals of V-Life
           </p>
         </div>

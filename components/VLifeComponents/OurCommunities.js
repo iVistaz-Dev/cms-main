@@ -14,7 +14,7 @@ const OurCommunities = () => {
 
       <div className="lg:flex hidden lg:block justify-center items-center lg:space-x-2 lg:p-0 p-3 lg:space-y-0 space-y-3 container mx-auto mt-4">
         {/* Block 1 */}
-        <div>
+        <div data-aos="flip-left" data-aos-duration="600">
           <div className="bg-[#46146C] mb-5 text-white p-6 lg:w-64 hover:bg-[#9258BC] transition duration-500 ease-in-out h-28 rounded-full flex items-center justify-center transform hover:scale-105">
             <p className="text-center">Small & Marginal Farmers</p>
           </div>
@@ -27,7 +27,7 @@ const OurCommunities = () => {
         </div>
 
         {/* Block 2 */}
-        <div>
+        <div data-aos="flip-right" data-aos-duration="600">
           <div className="bg-[#541484] mb-5 text-white p-6 lg:w-64 hover:bg-[#7944A0] transition duration-500 ease-in-out h-28 rounded-full flex items-center justify-center transform hover:scale-105">
             <p className="text-center">Women Entrepreneurs</p>
           </div>
@@ -40,7 +40,7 @@ const OurCommunities = () => {
         </div>
 
         {/* Block 3 */}
-        <div>
+        <div data-aos="flip-left" data-aos-duration="600">
           <div className="bg-[#622F88] mb-5 text-white p-6 lg:w-64 hover:bg-[#7944A0] transition duration-500 ease-in-out h-28 rounded-full flex items-center justify-center transform hover:scale-105">
             <p className="text-center">Youth</p>
           </div>
@@ -53,7 +53,7 @@ const OurCommunities = () => {
         </div>
 
         {/* Block 4 */}
-        <div>
+        <div data-aos="flip-right" data-aos-duration="600">
           <div className="bg-[#7944A0] mb-5 text-white p-6 lg:w-64 hover:bg-[#541484] transition duration-500 ease-in-out h-28 rounded-full flex items-center justify-center transform hover:scale-105">
             <p className="text-center">Artisans and Small Businesses</p>
           </div>
@@ -66,7 +66,7 @@ const OurCommunities = () => {
         </div>
 
         {/* Block 5 */}
-        <div>
+        <div data-aos="flip-left" data-aos-duration="600">
           <div className="bg-[#9258BC] mb-5 text-white p-6 lg:w-64 hover:bg-[#46146C] transition duration-500 ease-in-out h-28 rounded-full flex items-center justify-center transform hover:scale-105">
             <p className="text-center">Marginalised Communities</p>
           </div>
@@ -86,7 +86,7 @@ const OurCommunities = () => {
       </div>
 
       <div className="bg-[#00AF8B] text-center text-white">
-        <div className="container mx-auto">
+        <div className="container mx-auto" data-aos="zoom-in" data-aos-duration="400">
           <h2 className="text-[40px] font-bold pt-10">
             Enabling Credit to Farmers: Retail Loan
           </h2>

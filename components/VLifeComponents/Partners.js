@@ -1,12 +1,12 @@
 import { CarouselPartners } from "@/utils/data";
 import Image from "next/image";
 import React from "react";
-import PartnersCarousel from "../../components/VLifeComponents/Carouselpartners"
+import PartnersCarousel from "./Carouselpartners"
 
 const Partners = () => {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto" data-aos="flip-right" data-aos-duration="600">
         <h2 className="text-[40px] font-bold text-[#00AF8B] text-center mt-10">
           Partners
         </h2>
