@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="robots" content="index, nofollow" />
+        <meta name="robots" content="index, follow" />
       </head>
       <body>
         <main className="flex flex-col min-h-screen">
