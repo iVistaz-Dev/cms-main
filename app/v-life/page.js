@@ -27,13 +27,13 @@ const Page = () => {
   return (
     <div>
       <Vlife />
-      <CarouselVlife />
-      <OurRegion />
-      <OurCommunities />
-      <VlifeRoles />
-      <Support />
-      <Partners />
-      <Form />
+      {/* <CarouselVlife /> */}
+      {/* <OurRegion /> */}
+      {/* <OurCommunities /> */}
+      {/* <VlifeRoles /> */}
+      {/* <Support /> */}
+      {/* <Partners /> */}
+      {/* <Form /> */}
       <Footer />
     </div>
   );

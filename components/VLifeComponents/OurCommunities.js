@@ -1,6 +1,20 @@
-import React from "react";
+'use client'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import CarouselGroups from "./CarouselGroups";
 const OurCommunities = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      AOS.init({
+        delay: 0,
+        duration: 400,
+        easing: "ease",
+        disable: () => window.innerWidth < 800,
+      });
+    }
+  }, []);
+  
   return (
     <>
       <div className="container mx-auto">
@@ -79,13 +93,13 @@ const OurCommunities = () => {
         </div>
       </div>
       <CarouselGroups />
-      <div>
+      {/* <div>
         <button className="bg-[#7F3F97] flex m-auto rounded-xl p-3 my-8 w-52 justify-center text-white">
           Meet Our Communities
         </button>
-      </div>
+      </div> */}
 
-      <div className="bg-[#00AF8B] text-center text-white">
+      <div className="bg-[#00AF8B] text-center text-white mt-10">
         <div className="container mx-auto" data-aos="zoom-in" data-aos-duration="400">
           <h2 className="text-[40px] font-bold pt-10">
             Enabling Credit to Farmers: Retail Loan

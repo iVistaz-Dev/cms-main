@@ -28,7 +28,7 @@ const Content = React.forwardRef((props, ref) => {
   }
 
   return (
-    <div className="lg:hidden block">
+    <div className="lg:hidden block ">
       <div className="w-[90%] mx-auto">
         <Carousel
           responsive={responsive}
@@ -42,7 +42,7 @@ const Content = React.forwardRef((props, ref) => {
           className="h-[400px] bg-transparent container mx-auto"
         >
           {FourCarousel.map((items, index) => (
-            <div class="p-5 bg-[#7F3F97] border text-white rounded-3xl h-60 -mt-20 lg:-mt-0">
+            <div class="p-5 bg-[#7F3F97] border text-white rounded-3xl h-60  lg:-mt-0 -mt-10">
             <h2 className="text-[25px]">{items.title}</h2>
             <p class="mt-4 font-light">
               {items.desc}

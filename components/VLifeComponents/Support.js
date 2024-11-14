@@ -23,7 +23,7 @@ const SupportBeyondCredit = () => {
           </p>
 
           <div className="space-y-6">
-            {supportItems.map((item, index) => {
+            {supportItems.map((item, index) => {  
               const [title, ...rest] = item.description.split(":");
               return (
                 <div

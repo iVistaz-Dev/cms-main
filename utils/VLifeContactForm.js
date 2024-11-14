@@ -114,7 +114,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center container m-auto">
       <form className="w-full p-6 bg-white" onSubmit={handleFormSubmit}>
         <div className="flex flex-wrap -mx-3 mb-6">
           {/* First Name */}
