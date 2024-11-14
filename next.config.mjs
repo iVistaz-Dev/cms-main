@@ -21,11 +21,11 @@ const nextConfig = {
         destination: "/blogs/:slug",
         permanent: true,
       },
-      {
-        source: "/v-life",
-        destination: "/",
-        permanent: false,
-      },
+      // {
+      //   source: "/v-life",
+      //   destination: "/",
+      //   permanent: false,
+      // },z
     ]
   },
 }

@@ -35,7 +35,7 @@ export const tabs = [
   //   tab: "V-Life",
   //   link: "v-life",
   // },
-]
+] 
 
 export function generateMetadata() {
   return {
