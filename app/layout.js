@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="robots" content="index, follow" />
-        <meta name="msvalidate.01" content="3A1DB9ED4646392B00137E1B9B495726" />
+        <meta name="msvalidate.01" content="A827D56A91561DA21E2E94273F4D52D5" />
       </head>
       <body>
         <main className="flex flex-col min-h-screen">

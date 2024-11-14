@@ -896,6 +896,19 @@ export const socialBusinessesData = [
     path: "/ship",
     link: "ship",
   },
+  // {
+  //   id: 5,
+  //   imageUrl:
+  //     "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/socialBusinesses/image05.png",
+  //   logoUrl:
+  //     "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/socialBusinesses/logo02.png",
+  //   title: "V-Life",
+  //   target: "_blank",
+  //   desc: "V-Life is an innovative social enterprise focused on enhancing livelihoods in rural and underserved communities across India. V-Life acts as a catalyst, enabling access to finance for those who need it most. By combining financial products with livelihood support services, V-Life empowers communities to transform their economic landscape, fostering growth and resilience at the grassroots level.",
+  //   desc2: "",
+  //   path: "/v-life",
+  //   link: "v-life",
+  // },
 ]
 
 export const solutionsData = [

@@ -71,7 +71,7 @@ const Footer = () => {
           {website && (
             <span className="flex items-center gap-3">
               <FaGlobe className="text-[#7F3F97] text-xl" />
-              <Link href="/" className="text-xl hover:text-[#7F3F97]" target="_blank" rel="noopener noreferrer">
+              <Link href={website} className="text-xl hover:text-[#7F3F97]" target="_blank" rel="noopener noreferrer">
                 {website}
               </Link>
             </span>
