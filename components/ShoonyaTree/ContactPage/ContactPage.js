@@ -11,10 +11,10 @@ const ContactPage = () => {
   return (
     <>
       <Header scrollToRef={scrollToRef} />
-      <div ref={scrollToRef}>
+      {/* <div ref={scrollToRef}>
         <GetInvolved />
-      </div>
-      <Support />
+      </div> */}
+      {/* <Support /> */}
 
       <Footer />
     </>

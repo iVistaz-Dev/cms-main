@@ -30,12 +30,12 @@ export const tabs = [
     tab: "SHIP",
     link: "ship",
   },
-  {
-    id: 6,
-    tab: "V-Life",
-    link: "v-life",
-  },
-] 
+  // {
+  //   id: 6,
+  //   tab: "V-Life",
+  //   link: "v-life",
+  // },
+]
 
 export function generateMetadata() {
   return {

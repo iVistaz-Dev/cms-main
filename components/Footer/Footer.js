@@ -147,11 +147,11 @@ const Footer = () => {
                     SHIP
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/v-life" className="hover:underline">
                     V-Life
                   </Link>
-                </li>
+                </li> */}
               </ul>
 
               <ul className="text-[#CBCBCB] space-y-3">
