@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import CarouselGroups from "./CarouselGroups";
+
 const OurCommunities = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -17,8 +18,8 @@ const OurCommunities = () => {
   
   return (
     <>
-      <div className="container mx-auto">
-        <h2 className="text-center text-[40px] text-[#7F3F97] font-bold mt-8 py">
+      <div className="container mx-auto ">
+        <h2 className="text-center text-[40px] text-[#7F3F97] font-bold mt-8">
           Our communities
         </h2>
         <p className="text-center text-xl mb-10 mt-2">
@@ -26,71 +27,58 @@ const OurCommunities = () => {
         </p>
       </div>
 
-      <div className="lg:flex hidden lg:block justify-center items-center lg:space-x-2 lg:p-0 p-3 lg:space-y-0 space-y-3 container mx-auto mt-4">
+      <div className="hidden lg:block">
+      <div className="flex flex-wrap justify-center items-start container mx-auto mt-4 lg:space-x-[-20px] space-y-0">
         {/* Block 1 */}
-        <div data-aos="flip-left" data-aos-duration="600">
-          <div className="bg-[#46146C] mb-5 text-white p-6 lg:w-64 hover:bg-[#9258BC] transition duration-500 ease-in-out h-28 rounded-full flex items-center justify-center transform hover:scale-105">
-            <p className="text-center">Small & Marginal Farmers</p>
+        <div className="relative group w-64 m-3">
+          <div className="bg-[#46146C] h-20 -mt-3 text-white px-6 py-4 rounded-full shadow-lg transform group-hover:scale-105 transition duration-500 ease-in-out z-10">
+            <p className="text-center flex justify-center items-center mt-3">Small & Marginal Farmers</p>
           </div>
-          <div>
-            <p className="">
-              Supporting them with the resources and knowledge needed to improve
-              agricultural productivity and income stability
-            </p>
-          </div>
+          <p className="text-center mt-4 text-sm max-w-xs w-52">
+            Supporting them with the resources and knowledge needed to improve agricultural productivity and income stability.
+          </p>
         </div>
 
         {/* Block 2 */}
-        <div data-aos="flip-right" data-aos-duration="600">
-          <div className="bg-[#541484] mb-5 text-white p-6 lg:w-64 hover:bg-[#7944A0] transition duration-500 ease-in-out h-28 rounded-full flex items-center justify-center transform hover:scale-105">
-            <p className="text-center">Women Entrepreneurs</p>
+        <div className="relative group w-64  m-3" data-aos-delay="100">
+          <div className="bg-[#541484] h-20 text-white px-6 py-4 rounded-full shadow-lg transform group-hover:scale-105 transition duration-500 ease-in-out z-10">
+            <p className="text-center mt-3">Women Entrepreneurs</p>
           </div>
-          <div>
-            <p>
-              Empowering women to take charge of their economic futures through
-              financial independence and entrepreneurship
-            </p>
-          </div>
+          <p className="text-center mt-4 text-sm max-w-xs w-52">
+            Empowering women to take charge of their economic futures through financial independence and entrepreneurship.
+          </p>
         </div>
 
         {/* Block 3 */}
-        <div data-aos="flip-left" data-aos-duration="600">
-          <div className="bg-[#622F88] mb-5 text-white p-6 lg:w-64 hover:bg-[#7944A0] transition duration-500 ease-in-out h-28 rounded-full flex items-center justify-center transform hover:scale-105">
-            <p className="text-center">Youth</p>
+        <div className="relative group w-64  m-3" data-aos-delay="200">
+          <div className="bg-[#622F88] h-20 text-white px-6 py-4 rounded-full shadow-lg transform group-hover:scale-105 transition duration-500 ease-in-out z-10">
+            <p className="text-center mt-3">Youth</p>
           </div>
-          <div>
-            <p>
-              Providing young people with the skills and opportunities needed to
-              secure sustainable livelihoods in their communities
-            </p>
-          </div>
+          <p className="text-center mt-4 text-sm max-w-xs w-52">
+            Providing young people with the skills and opportunities needed to secure sustainable livelihoods in their communities.
+          </p>
         </div>
 
         {/* Block 4 */}
-        <div data-aos="flip-right" data-aos-duration="600">
-          <div className="bg-[#7944A0] mb-5 text-white p-6 lg:w-64 hover:bg-[#541484] transition duration-500 ease-in-out h-28 rounded-full flex items-center justify-center transform hover:scale-105">
+        <div className="relative group w-64  m-3" data-aos-delay="300">
+          <div className="bg-[#7944A0] h-20 text-white px-6 py-4 rounded-full shadow-lg transform group-hover:scale-105 transition duration-500 ease-in-out z-10">
             <p className="text-center">Artisans and Small Businesses</p>
           </div>
-          <div>
-            <p>
-              Enabling local artisans and small enterprises to grow and thrive{" "}
-              <br /> in an increasingly competitive market
-            </p>
-          </div>
+          <p className="text-center mt-4 text-sm max-w-xs w-52">
+            Enabling local artisans and small enterprises to grow and thrive in an increasingly competitive market.
+          </p>
         </div>
 
         {/* Block 5 */}
-        <div data-aos="flip-left" data-aos-duration="600">
-          <div className="bg-[#9258BC] mb-5 text-white p-6 lg:w-64 hover:bg-[#46146C] transition duration-500 ease-in-out h-28 rounded-full flex items-center justify-center transform hover:scale-105">
-            <p className="text-center">Marginalised Communities</p>
+        <div className="relative group w-64  m-3" data-aos-delay="400">
+          <div className="bg-[#9258BC] h-20 text-white px-6 py-4 rounded-full shadow-lg transform group-hover:scale-105 transition duration-500 ease-in-out z-10">
+            <p className="text-center mt-3">Marginalised Communities</p>
           </div>
-          <div>
-            <p>
-              Fostering economic independence and enabling sex worker, queer,
-              and transgender communities to invest in essential services
-            </p>
-          </div>
+          <p className="text-center mt-4 text-sm max-w-xs w-52">
+            Fostering economic independence and enabling sex worker, queer, and transgender communities to invest in essential services.
+          </p>
         </div>
+      </div>
       </div>
       <CarouselGroups />
       {/* <div>

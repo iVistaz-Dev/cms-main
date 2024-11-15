@@ -66,3 +66,23 @@ body {
 .custom-dot-lists {
   margin-bottom: 40px !important;
 }
+
+
+/* Customize z-index and margins to achieve overlap */
+.relative.group .z-10 {
+  z-index: 10;
+}
+
+.flex-wrap .m-3 {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+@media (min-width: 1024px) {
+  .m-3 {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+}
+
+

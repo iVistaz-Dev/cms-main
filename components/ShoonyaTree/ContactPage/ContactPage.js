@@ -16,7 +16,7 @@ const ContactPage = () => {
       </div> */}
       {/* <Support /> */}
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

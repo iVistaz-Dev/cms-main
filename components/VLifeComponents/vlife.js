@@ -36,7 +36,7 @@ const vlife = () => {
         </div>
       </div>
 
-      <div data-aos="zoom-in" className="lg:bg-[url('/Vlife/Banner.png')] bg-[url('/Vlife/mobile-banner1.png')] bg-cover bg-center h-[100vh] w-full z-0">
+      <div data-aos="zoom-in" className="lg:bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/V-Life/Banner.jpg')] bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/V-Life/mobile-banner.jpg')] bg-cover bg-center h-[100vh] w-full z-0">
         <p className="lg:text-[50px] text-[30px] text-[#00AF8B] text-center z-0 font-bold mt-9">
           Empowering Rural Communities <br /> for a Sustainable Future
         </p>

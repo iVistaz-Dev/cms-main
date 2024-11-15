@@ -40,7 +40,7 @@ const OurRegion = () => {
         {/* Right side with image */}
         <div className="w-1/2">
           <Image
-            src="/Vlife/region.jpg"
+            src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/V-Life/region.jpg"
             width={600}
             height={400}
             alt="Family in rural India"
@@ -52,7 +52,7 @@ const OurRegion = () => {
         <div className="lg:flex container mx-auto mt-10 ">
           <div className="">
             <Image
-              src="/Vlife/region-mobile.jpg"
+              src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/V-Life/mobile-region.jpg"
               width={600}
               height={400}
               alt="Family in rural India"

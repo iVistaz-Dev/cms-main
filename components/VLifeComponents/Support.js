@@ -6,12 +6,12 @@ import React from "react";
 const SupportBeyondCredit = () => {
   return (
     <>
-     <div  data-aos="flip-up" data-aos-duration="600">
+     <div data-aos-duration="600">
         <div className="container mx-auto">
-            <Image src="/Vlife/milk.jpg" width={500} height={400} className="w-[100%] lg:mt-20" />
+            <Image src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/V-Life/milk.jpg" width={500} height={400} className="w-[100%] lg:mt-20" />
         </div>
       </div>
-      <div   data-aos="flip-down" data-aos-duration="600" className="bg-[#7F3F97] text-white space-y-0 px-6 container mx-auto lg:-mt-10 -mt-1 py-10">
+      <div  data-aos-duration="600" className="bg-[#7F3F97] text-white space-y-0 px-6 container mx-auto lg:-mt-10 -mt-1 py-10">
         <div className=" mx-auto">
           <h1 className="text-center text-3xl font-semibold mb-6">
             Support Beyond Credit
