@@ -6,8 +6,7 @@ const OurRegion = () => {
     <>
       <div
         className="lg:flex container mx-auto my-20 hidden lg:block"
-        data-aos-duration="400"
-        data-aos="zoom-in"
+        
       >
         {/* Left side with text content */}
         <div className="bg-[#00AF8B] p-8 text-white w-1/2 h-auto">

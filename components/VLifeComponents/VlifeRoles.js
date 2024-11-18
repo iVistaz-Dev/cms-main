@@ -5,7 +5,7 @@ const VlifeRoles = () => {
   return (
     <>
       <div className="container mx-auto text-center">
-        <div data-aos="flip-down" data-aos-duration="400">
+        <div>
           <h2 className="text-[40px] font-bold text-[#7F3F97] mt-10">
             V-Life’s Role
           </h2>
@@ -16,7 +16,7 @@ const VlifeRoles = () => {
             services:
           </p>
         </div>
-        <div data-aos="flip-up" data-aos-duration="400">
+        <div>
           <h2 className="text-2xl font-bold text-[#7F3F97] mt-10">
             Working Capital Loans
           </h2>
@@ -31,7 +31,7 @@ const VlifeRoles = () => {
 
         <p className="border-b border-dashed mt-7 border-black"></p>
 
-        <div data-aos="flip-down" data-aos-duration="400">
+        <div>
           <h2 className="text-2xl font-bold text-[#7F3F97] mt-5">
             Infrastructure Financing
           </h2>
@@ -44,7 +44,7 @@ const VlifeRoles = () => {
           </p>
         </div>
         <p className="border-b border-dashed mt-7 border-black"></p>
-        <div data-aos="flip-up" data-aos-duration="400">
+        <div>
           <h2 className="text-2xl font-bold text-[#7F3F97] mt-5">
             {" "}
             Revolving Credit Lines

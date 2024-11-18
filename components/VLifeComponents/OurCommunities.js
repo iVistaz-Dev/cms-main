@@ -1,20 +1,9 @@
 'use client'
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import CarouselGroups from "./CarouselGroups";
 
 const OurCommunities = () => {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      AOS.init({
-        delay: 0,
-        duration: 400,
-        easing: "ease",
-        disable: () => window.innerWidth < 800,
-      });
-    }
-  }, []);
+  
   
   return (
     <>
@@ -40,7 +29,7 @@ const OurCommunities = () => {
         </div>
 
         {/* Block 2 */}
-        <div className="relative group w-64  m-3" data-aos-delay="100">
+        <div className="relative group w-64  m-3">
           <div className="bg-[#541484] h-20 text-white px-6 py-4 rounded-full shadow-lg transform group-hover:scale-105 transition duration-500 ease-in-out z-10">
             <p className="text-center mt-3">Women Entrepreneurs</p>
           </div>
@@ -50,7 +39,7 @@ const OurCommunities = () => {
         </div>
 
         {/* Block 3 */}
-        <div className="relative group w-64  m-3" data-aos-delay="200">
+        <div className="relative group w-64  m-3">
           <div className="bg-[#622F88] h-20 text-white px-6 py-4 rounded-full shadow-lg transform group-hover:scale-105 transition duration-500 ease-in-out z-10">
             <p className="text-center mt-3">Youth</p>
           </div>
@@ -60,7 +49,7 @@ const OurCommunities = () => {
         </div>
 
         {/* Block 4 */}
-        <div className="relative group w-64  m-3" data-aos-delay="300">
+        <div className="relative group w-64  m-3">
           <div className="bg-[#7944A0] h-20 text-white px-6 py-4 rounded-full shadow-lg transform group-hover:scale-105 transition duration-500 ease-in-out z-10">
             <p className="text-center">Artisans and Small Businesses</p>
           </div>
@@ -70,7 +59,7 @@ const OurCommunities = () => {
         </div>
 
         {/* Block 5 */}
-        <div className="relative group w-64  m-3" data-aos-delay="400">
+        <div className="relative group w-64  m-3">
           <div className="bg-[#9258BC] h-20 text-white px-6 py-4 rounded-full shadow-lg transform group-hover:scale-105 transition duration-500 ease-in-out z-10">
             <p className="text-center mt-3">Marginalised Communities</p>
           </div>
@@ -88,7 +77,7 @@ const OurCommunities = () => {
       </div> */}
 
       <div className="bg-[#00AF8B] text-center text-white mt-10">
-        <div className="container mx-auto" data-aos="zoom-in" data-aos-duration="400">
+        <div className="container mx-auto">
           <h2 className="text-[40px] font-bold pt-10">
             Enabling Credit to Farmers: Retail Loan
           </h2>

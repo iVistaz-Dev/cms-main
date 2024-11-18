@@ -39,8 +39,8 @@ const CaouselVlife = () => {
           <div className="flex container mx-auto gap-5 justify-center">
             <div
               class="w-64 p-5 bg-[#7F3F97] border text-white rounded-3xl mt-10"
-              data-aos="flip-left"
-              data-aos-duration="600"
+              
+             
             >
               <h2 className="text-[25px]">Empowering Rural Communities:</h2>
               <p class="mt-4 font-light">
@@ -52,8 +52,7 @@ const CaouselVlife = () => {
             <div>
               <div
                 class="w-64 p-5 bg-[#7F3F97] border text-white rounded-3xl"
-                data-aos="flip-right"
-                data-aos-duration="600"
+                
               >
                 <h2 className="text-[25px]">Promoting Financial Inclusion:</h2>
                 <p class="mt-4 font-light">
@@ -66,8 +65,7 @@ const CaouselVlife = () => {
             <div>
               <div
                 class="w-64 p-5 bg-[#7F3F97] border text-white rounded-3xl mt-10"
-                data-aos="flip-left"
-                data-aos-duration="600"
+              
               >
                 <h2 className="text-[25px]">Enhancing Gender Equality:</h2>
                 <p class="mt-4 font-light">
@@ -80,8 +78,7 @@ const CaouselVlife = () => {
             <div>
               <div
                 class="w-64 p-5 bg-[#7F3F97] border text-white rounded-3xl"
-                data-aos="flip-right"
-                data-aos-duration="600"
+               
               >
                 <h2 className="text-[25px]">Building Climate Resilience:</h2>
                 <p class="mt-4 font-light">
@@ -112,8 +109,7 @@ const CaouselVlife = () => {
         >
           <div
             className="lg:w-72 lg:mt-44 p-3 lg:p-0"
-            data-aos-duration="400"
-            data-aos="flip-right"
+          
           >
             <h2 className="text-[#00AF8B] text-[40px] mt-4">
               How Does It Work?
@@ -125,8 +121,7 @@ const CaouselVlife = () => {
             </p>
           </div>
           <Image
-            data-aos-duration="400"
-            data-aos="flip-left"
+            
             src="/Vlife/info1.png"
             width={700}
             height={500}

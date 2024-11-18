@@ -8,24 +8,24 @@ import VlifeRoles from "./VlifeRoles";
 import Support from "./Support";
 import Partners from "./Partners";
 import Form from "./Form";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 const vlife = () => {
   const contactSectionRef = useRef(null);
 
   const scrollToContact = () => {
     contactSectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      AOS.init({
-        delay: 0,
-        duration: 400,
-        easing: "ease",
-        disable: () => window.innerWidth < 800,
-      });
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     AOS.init({
+  //       delay: 0,
+  //       duration: 400,
+  //       easing: "ease",
+  //       disable: () => window.innerWidth < 800,
+  //     });
+  //   }
+  // }, []);
   return (
     <>
       <div className="pb-10">
@@ -36,13 +36,13 @@ const vlife = () => {
         </div>
       </div>
 
-      <div data-aos="zoom-in" className="lg:bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/V-Life/Banner.jpg')] bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/V-Life/mobile-banner.jpg')] bg-cover bg-center h-[100vh] w-full z-0">
+      <div className="lg:bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/V-Life/Banner.jpg')] bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/V-Life/mobile-banner.jpg')] bg-cover bg-center h-[100vh] w-full z-0">
         <p className="lg:text-[50px] text-[30px] text-[#00AF8B] text-center z-0 font-bold mt-9">
           Empowering Rural Communities <br /> for a Sustainable Future
         </p>
       </div>
 
-      <div data-aos="flip-left">
+      <div>
         <p className="text-center lg:pl-32 lg:pr-32 p-5 text-xl py-10">
           India’s rural landscape is rich with potential, but many communities
           face significant challenges in achieving sustainable livelihoods.
@@ -61,8 +61,8 @@ const vlife = () => {
 
       <div
         className="lg:flex justify-center lg:mt-20"
-        data-aos="zoom-in"
-        data-aos-duration="600"
+        // data-aos="zoom-in"
+        // data-aos-duration="600"
       >
         <div>
           <p className="text-[#7F3F97] text-[40px] lg:-rotate-90 lg:mt-36 mt-8 mb-4 font-bold text-center">
@@ -93,8 +93,8 @@ const vlife = () => {
       </div> */}
 
       <div
-        data-aos="zoom-in"
-        data-aos-duration="600"
+        // data-aos="zoom-in"
+        // data-aos-duration="600"
         className="lg:bg-[url('/Vlife/Banner2.png')] bg-[url('/Vlife/mobile-banner-2.png')] bg-cover bg-center h-[50vh] w-full z-0 relative"
       >
         <div className="absolute bottom-0 w-full text-center">
