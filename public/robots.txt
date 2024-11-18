@@ -3,7 +3,7 @@ Sitemap: https://cms.org.in/sitemap.xml
 # START YOAST BLOCK
 # ---------------------------
 User-agent: *
-Disallow: 
+Disallow: /
 
 # ---------------------------
 # END YOAST BLOCK
