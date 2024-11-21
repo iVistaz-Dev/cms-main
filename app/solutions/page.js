@@ -25,6 +25,7 @@ export const tabs = [
 
 
 const page = () => {
+  
   const seoField = {
     title: "Effective Solutions for Scalable and Sustainable Development",
     description:

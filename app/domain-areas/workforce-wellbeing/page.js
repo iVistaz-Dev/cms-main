@@ -5,7 +5,7 @@ import Header from "@/components/Header/Header"
 import RelatedResources from "@/components/RelatedResources/RelatedResources"
 import Image from "next/image"
 import React from "react"
-
+import Seo from "../../../components/Seo/Seo"
 export const tabs = [
   {
     id: 1,
@@ -24,38 +24,26 @@ export const tabs = [
   },
 ]
 
-export function generateMetadata() {
-  return {
+
+const page = () => {
+  
+  const seoField = {
     title: "Making worker wellbeing a reality | Wellbeing for Workforce",
     description:
       "We strive to make worker wellbeing a reality through large scale implementation of transformation models",
-    metadataBase: new URL(
-      "https://cms.org.in/domain-areas/workforce-wellbeing"
-    ),
-    openGraph: {
-      url: "https://cms.org.in/domain-areas/workforce-wellbeing",
-      title: "Making worker wellbeing a reality | Wellbeing for Workforce",
-      description:
-        "Our team partners with multi-disciplinary teams to tackle challenges and maximise social returns",
-      images: [
-        {
-          url: "/social.png",
-          width: 800,
-          height: 600,
-          alt: "CMS",
-        },
-      ],
-    },
-  }
-}
+    path: "domain-areas/workforce-wellbeing",
+    metaImage: "/social.png",
+    pageType: "WebSite"
+  };
 
-const page = () => {
+
   const overviewDesc =
     "Our Wellbeing for Workforce practice strives to make wellbeing a reality for first-mile workers and reach 100 million workers by 2030. We are committed to the Wellbeing of the Workforce, their families, and communities."
   return (
     <>
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/domainAreas/workforce/banner.png')] h-[420px] md:h-[640px] bg-center bg-cover pt-5 flex flex-col">
         <div className="w-full">
+          <Seo {...seoField}/>
           <Header />
         </div>
         <div className="md:ps-24 flex justify-center md:justify-start items-end h-full">

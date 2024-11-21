@@ -2,7 +2,7 @@ import AlliancesAndPlatforms from "@/components/DomainAreas/Health/AlliancesAndP
 import KeyDomain from "@/components/DomainAreas/Health/KeyDomain/KeyDomain"
 import KeyInitiatives from "@/components/DomainAreas/Health/KeyInitiatives/KeyInitiatives"
 import KeyInitiatives02 from "@/components/DomainAreas/Health/KeyInitiatives/KeyInitiatives02/KeyInitiatives02"
-
+import Seo from "../../../components/Seo/Seo"
 import Overview from "@/components/DomainAreas/Overview/Overview"
 import Footer from "@/components/Footer/Footer"
 import Header from "@/components/Header/Header"
@@ -43,36 +43,24 @@ export const tabs = [
   },
 ]
 
-export function generateMetadata() {
-  return {
+const page = () => {
+  
+  const seoField = {
     title: "Strengthening health and community systems | Health",
     description:
       "We focus on strengthening health and community systems to achieve Universal Health Coverage, health equity quality primary care for all",
-    metadataBase: new URL("https://cms.org.in/domain-areas/health"),
-    openGraph: {
-      url: "https://cms.org.in/domain-areas/health",
-      title: "Strengthening health and community systems | Health",
-      description:
-        "We focus on strengthening health and community systems to achieve Universal Health Coverage, health equity quality primary care for all",
-      images: [
-        {
-          url: "/social.png",
-          width: 800,
-          height: 600,
-          alt: "CMS",
-        },
-      ],
-    },
-  }
-}
+    path: "domain-areas/health",
+    metaImage: "/social.png",
+    pageType: "WebSite"
+  };
 
-const page = () => {
   const overviewDesc =
     "We have 25 years of experience as a global social impact consulting firm and use a 360-degree approach that improves the well-being of vulnerable communities. CMS and its sister organisation, Swasti, a global south public health agency, partner with communities at the last mile to help them realise their potential through health and well-being. We work towards achieving Universal Health Care and Global Health Security through a Climate x Health centric approach and ensure our programmes are climate-responsive."
   return (
     <>
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/domainAreas/health/banner.png')] h-[420px] md:h-[640px] bg-center bg-cover pt-5 flex flex-col">
         <div className="w-full">
+         <Seo {...seoField}/>
           <Header />
         </div>
         <div className="md:ps-24 flex justify-center md:justify-start items-end h-full">

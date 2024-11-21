@@ -4,6 +4,7 @@ import { catalystData } from "@/utils/data"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
+import Seo from "../../../components/Seo/Seo"
 
 // const tabs = [
 //   {
@@ -18,32 +19,17 @@ import React from "react"
 //   },
 // ]
 
-export function generateMetadata() {
-  return {
+
+const page = () => {
+  const seoField = {
     title: "Overcoming Challenges in Farmer Producer Companies (FPCs)",
     description:
       "Addressing FPCs' challenges: poor produce quality, limited financing, and low shareholder confidence to improve farmer returns and strengthen buyer relations.",
-    metadataBase: new URL(
-      "https://cms.org.in/social-businesses/catalyst-livelihood-ventures"
-    ),
-    openGraph: {
-      url: "https://cms.org.in/social-businesses/catalyst-livelihood-ventures",
-      title: "Overcoming Challenges in Farmer Producer Companies (FPCs)",
-      description:
-        "Addressing FPCs' challenges: poor produce quality, limited financing, and low shareholder confidence to improve farmer returns and strengthen buyer relations.",
-      images: [
-        {
-          url: "/social.png",
-          width: 800,
-          height: 600,
-          alt: "CMS",
-        },
-      ],
-    },
+    path: "social-businesses/catalyst-livelihood-ventures",
+    metaImage: "/social.png",
+    pageType: "WebSite",
   }
-}
 
-const page = () => {
   return (
     <>
       {/* <NextSeo
@@ -53,6 +39,7 @@ const page = () => {
         metaImage=""
       /> */}
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/socialBusinesses/catalyst/banner01.png')] md:bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/socialBusinesses/catalyst/banner.png')] flex flex-col justify-center md:justify-end h-[420px] md:h-[640px] bg-center bg-cover py-10 md:py-16">
+        <Seo {...seoField}/>
         <Header />
         <div className="ps-2 md:ps-24">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center sm:text-left">

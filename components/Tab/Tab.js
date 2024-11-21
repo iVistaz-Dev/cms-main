@@ -71,7 +71,7 @@ const Tab = ({ tabs }) => {
                       <button
                         className={`w-full text-left py-2 px-4 text-lg ${
                           active
-                            ? "bg-[#98D5C5] text-cms-primary-gray"
+                            ? "bg-[#0000] text-cms-primary-gray"
                             : "text-[#404040]"
                         }`}
                         onClick={() => setIsActive(item.id)}

@@ -7,7 +7,7 @@ import Tab from "@/components/Tab/Tab"
 import { notableProjectsData } from "@/utils/data"
 import Image from "next/image"
 import React from "react"
-
+import Seo from "../../../components/Seo/Seo"
 export const tabs = [
   {
     id: 1,
@@ -27,32 +27,18 @@ export const tabs = [
   },
 ]
 
-export function generateMetadata() {
-  return {
-    title:
-      "Designing sustainable development interventions | Design for Success",
-    description:
-      "We design sustainable development interventions using human centred design and participatory approaches",
-    metadataBase: new URL("https://cms.org.in/solutions/design-for-success"),
-    openGraph: {
-      url: "https://cms.org.in/solutions/design-for-success",
-      title:
-        "Designing sustainable development interventions | Design for Success",
-      description:
-        "We design sustainable development interventions using human centred design and participatory approaches",
-      images: [
-        {
-          url: "/social.png",
-          width: 800,
-          height: 600,
-          alt: "CMS",
-        },
-      ],
-    },
-  }
-}
+
 
 const page = () => {
+      const seoField = {
+        title:
+        "Designing sustainable development interventions | Design for Success",
+      description:
+        "We design sustainable development interventions using human centred design and participatory approaches", 
+        path: "solutions/design-for-success",
+        metaImage: "/social.png",
+        pageType: "WebSite"
+      };
   return (
     <>
       {/* <NextSeo
@@ -63,6 +49,7 @@ const page = () => {
       /> */}
       <div className="bg-[url('/scaleAccelerators/designForSuccess/banner.png')] flex flex-col h-[420px] md:h-[640px] pt-5 bg-center bg-cover">
         <div className="w-full">
+          <Seo {...seoField} />
           <Header />
         </div>
         {/* <div className="md:ps-24 flex justify-center md:justify-start mt-14 sm:mt-24 md:mt-32 lg:mt-48 px-2 md:px-0">

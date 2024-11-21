@@ -5,7 +5,7 @@ import PartneredWithExperts from "@/components/ScaleAccelerators/EvidenceForChan
 import { workIncludeData } from "@/utils/data"
 import Image from "next/image"
 import React from "react"
-
+import Seo from "../../../components/Seo/Seo"
 export const tabs = [
   {
     id: 1,
@@ -29,32 +29,17 @@ export const tabs = [
   },
 ]
 
-export function generateMetadata() {
-  return {
-    title:
-      "Transforming investment through impact evaluations | Evidence for Change",
-    description:
-      "We do research and evaluation by conducting impact assessments in multiple domains, with a variety of partners, using multidisciplinary learning systems",
-    metadataBase: new URL("https://cms.org.in/solutions/evidence-for-change"),
-    openGraph: {
-      url: "https://cms.org.in/solutions/evidence-for-change",
-      title:
-        "Transforming investment through impact evaluations | Evidence for Change",
-      description:
-        "We do research and evaluation by conducting impact assessments in multiple domains, with a variety of partners, using multidisciplinary learning systems",
-      images: [
-        {
-          url: "/social.png",
-          width: 800,
-          height: 600,
-          alt: "CMS",
-        },
-      ],
-    },
-  }
-}
 
 const page = () => {
+  const seoField = {
+    title:
+    "Transforming investment through impact evaluations | Evidence for Change",
+  description:
+    "We do research and evaluation by conducting impact assessments in multiple domains, with a variety of partners, using multidisciplinary learning systems",
+    path: "solutions/evidence-for-change",
+    metaImage: "/social.png",
+    pageType: "WebSite"
+  };
   return (
     <>
       {/* <NextSeo
@@ -65,6 +50,7 @@ const page = () => {
       /> */}
       <div className="bg-[url('/scaleAccelerators/evidenceForChange/banner.png')] h-[420px] md:h-[640px] bg-center bg-cover pt-5 flex flex-col">
         <div className="w-full">
+         <Seo {...seoField}/>
           <Header />
         </div>
         {/* <div className="md:ps-24 flex justify-center md:justify-start mt-14 sm:mt-24 md:mt-32 lg:mt-48 px-2 md:px-0">

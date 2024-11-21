@@ -6,7 +6,7 @@ import RapidFramework from "@/components/ScaleAccelerators/RapidFramework/RapidF
 import { elementsData } from "@/utils/data"
 import Image from "next/image"
 import React from "react"
-
+import Seo from "../../../components/Seo/Seo"
 export const tabs = [
   {
     id: 1,
@@ -35,32 +35,17 @@ export const tabs = [
   },
 ]
 
-export function generateMetadata() {
-  return {
+
+const page = () => {
+  const seoField = {
     title:
       "Power of Effective Execution: Ensuring Success in Innovation Implementation",
     description:
       "Explore the challenges of implementing innovative ideas at scale and how the RAPID framework can ensure successful execution for sustainable impact.",
-    metadataBase: new URL("https://cms.org.in/solutions/implement-for-scale"),
-    openGraph: {
-      url: "https://cms.org.in/solutions/implement-for-scale",
-      title:
-        "Power of Effective Execution: Ensuring Success in Innovation Implementation",
-      description:
-        "Explore the challenges of implementing innovative ideas at scale and how the RAPID framework can ensure successful execution for sustainable impact.",
-      images: [
-        {
-          url: "/social.png",
-          width: 800,
-          height: 600,
-          alt: "CMS",
-        },
-      ],
-    },
-  }
-}
-
-const page = () => {
+    path: "solutions/implement-for-scale",
+    metaImage: "/social.png",
+    pageType: "WebSite"
+  };
   return (
     <>
       {/* <NextSeo
@@ -71,6 +56,7 @@ const page = () => {
       /> */}
       <div className="bg-[url('/scaleAccelerators/implementForScale/banner.png')] h-[420px] md:h-[640px] bg-center bg-cover pt-5 flex flex-col">
         <div className="w-full">
+          <Seo {...seoField}/>
           <Header />
         </div>
         {/* <div className="md:ps-24 flex justify-center md:justify-start mt-14 sm:mt-24 md:mt-32 lg:mt-48 px-2 md:px-0">
