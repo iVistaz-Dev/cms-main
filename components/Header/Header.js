@@ -223,7 +223,7 @@ const Header = () => {
                   >
                     Contact Us
                   </Link>
-                  <SearchModal/>
+                  {/* <SearchModal/> */}
                 </li>
                 
               </ul>
