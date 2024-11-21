@@ -5,36 +5,22 @@ import Values from "@/components/AboutUs/Vision/Values/Values"
 import Footer from "@/components/Footer/Footer"
 import Header from "@/components/Header/Header"
 import React from "react"
-
-export function generateMetadata() {
-  return {
+import Seo from "../../../components/Seo/Seo"
+const page = () => {
+  const seoField = {
     title: "Transforming Lives Through Holistic Partnerships and Impact",
     description:
       "Driving sustainable equity by impacting 100M lives through UN SDG alignment, integrated solutions, and strategic investments by 2030. Join our mission today!",
-    metadataBase: new URL("https://cms.org.in/about-us/vision"),
-    openGraph: {
-      url: "https://cms.org.in/about-us/vision",
-      title: "Transforming Lives Through Holistic Partnerships and Impact",
-      description:
-        "Driving sustainable equity by impacting 100M lives through UN SDG alignment, integrated solutions, and strategic investments by 2030. Join our mission today!",
-      images: [
-        {
-          url: "/social.png",
-          width: 800,
-          height: 600,
-          alt: "CMS",
-        },
-      ],
-    },
-  }
-}
-
-const page = () => {
+    path: "about-us/vision",
+    metaImage: "/social.png",
+    pageType: "WebSite"
+  };
   const desc =
     "A future where holistic and well-orchestrated partnerships and investments create an impact that is transformational, driving sustainable and scalable equity."
   return (
     <>
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/banner/banner01.png')] flex flex-col justify-center md:justify-end h-[420px] md:[720px] w-full bg-cover bg-center py-10 md:py-16 sm:h-[500px] md:h-[600px] lg:h-[720px]">
+        <Seo {...seoField}/>
         <Header />
         <div className="ps-2 md:ps-24">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center sm:text-left">

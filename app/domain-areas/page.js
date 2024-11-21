@@ -1,9 +1,9 @@
-import DomainAreas from "@/components/DomainAreas/DomainAreas"
-import Footer from "@/components/Footer/Footer"
-import Header from "@/components/Header/Header"
-import Tab from "@/components/Tab/Tab"
-import React from "react"
-
+import DomainAreas from "@/components/DomainAreas/DomainAreas";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
+import Tab from "@/components/Tab/Tab";
+import React from "react";
+import Seo from "../../components/Seo/Seo"
 export const tabs = [
   {
     id: 1,
@@ -30,37 +30,22 @@ export const tabs = [
     tab: "ESG",
     link: "esg",
   },
-]
+];
 
-export function generateMetadata() {
-  return {
+const page = () => {
+  const seoField = {
     title:
       "Supporting Enterprises & Vulnerable Communities through Domain Areas",
     description:
       "Expertise in enterprise support, healthcare, and first-mile worker wellbeing, focusing on livelihood, health, ESG, and climate change resilience.",
-    metadataBase: new URL("https://cms.org.in/domain-areas"),
-    openGraph: {
-      url: "https://cms.org.in/domain-areas",
-      title:
-        "Supporting Enterprises & Vulnerable Communities through Domain Areas",
-      description:
-        "Expertise in enterprise support, healthcare, and first-mile worker wellbeing, focusing on livelihood, health, ESG, and climate change resilience.",
-      images: [
-        {
-          url: "/social.png",
-          width: 800,
-          height: 600,
-          alt: "CMS",
-        },
-      ],
-    },
-  }
-}
-
-const page = () => {
+    path: "domain-areas",
+    metaImage: "/social.png",
+    pageType: "WebSite",
+  };
   return (
     <>
       <div className="bg-[url('/domainAreas/banner.png')] flex flex-col justify-center md:justify-end h-[420px] md:h-[480px] w-full bg-center bg-cover py-10 md:py-16">
+       <Seo {...seoField}/>
         <Header />
         <div className="ps-2 md:ps-24">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center sm:text-left">
@@ -89,7 +74,7 @@ const page = () => {
         <Footer />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

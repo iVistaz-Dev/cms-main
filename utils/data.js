@@ -56,6 +56,7 @@ export const teamData = [
     desc: "Co-Founder, Director",
     inUrl: "https://www.linkedin.com/in/shiv-kumar-a288141/",
     xurl: "https://x.com/?lang=en",
+
   },
   {
     id: 2,

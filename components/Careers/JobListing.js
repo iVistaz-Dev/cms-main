@@ -29,6 +29,7 @@ import React, { useEffect, useState } from "react"
 // ]
 
 const JobListing = () => {
+  
   const [isOpening, setIsOpening] = useState(true)
   const [openings, setOpenings] = useState([])
 
@@ -66,6 +67,7 @@ const JobListing = () => {
 
   return (
     <>
+
       <div className="flex flex-wrap justify-center">
         {openings.map((job) => (
           <div

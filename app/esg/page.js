@@ -9,16 +9,18 @@ import DifferentSectors from "../../components/Esg/DifferentSectors"
 import Vision from "../../components/Esg/Vision"
 import ContactUs from "../../components/Esg/Contact"
 import OurTeam from "../../components/Esg/OurTeam"
-
+import Seo from "../../components/Seo/Seo"
 import AOS from "aos"
 import "aos/dist/aos.css"
-
+const seoField = {
+  title: "Catalysing Net-Positive Value Chains for Sustainability",
+    description:
+      "Embrace holistic sustainability by integrating responsible practices throughout the value chain, focusing on people, planet, and lasting sustainable outcomes.",
+  path: "esg",
+  metaImage: "/social.png",
+  pageType: "WebSite",
+}
 export default function Home() {
-  const title = "Catalysing Net-Positive Value Chains for Sustainability"
-  const desc =
-    "Embrace holistic sustainability by integrating responsible practices throughout the value chain, focusing on people, planet, and lasting sustainable outcomes."
-  const image =
-    "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/esg/blogs/1.png"
 
   const section1Ref = useRef(null)
   const scrollToSection1 = () => {
@@ -34,23 +36,7 @@ export default function Home() {
 
   return (
     <>
-      <head>
-        <title>{title}</title>
-        <meta name="description" content={desc} />
-        <link rel="canonical" href="https://www.cms.org.in/esg" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={desc} />
-        <meta property="og:url" content="https://cms.org.in/esg" />
-        <meta property="og:site_name" content="CMS.ORG.IN" />
-        <meta
-          property="article:modified_time"
-          content="2024-05-15T06:00:37+00:00"
-        />
-        <meta property="og:image" content={image} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </head>
+      <Seo {...seoField}/>
       <Header onClick={scrollToSection1} />
       <Banner />
       <GlobalImpact />

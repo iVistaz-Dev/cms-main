@@ -3,7 +3,7 @@ import Header from "@/components/Header/Header"
 import SocialBusinesses from "@/components/SocialBusinesses/SocialBusinesses"
 import Tab from "@/components/Tab/Tab"
 import React from "react"
-
+import Seo from "../../components/Seo/Seo"
 export const tabs = [
   {
     id: 1,
@@ -39,9 +39,7 @@ export const tabs = [
 
 export function generateMetadata() {
   return {
-    title: "Social Enterprises Evolved from Catalyst: Impactful Ventures",
-    description:
-      "Discover how our thriving organisations like Catalyst Livelihood Ventures, Shoonya, and SHIP, driving change in the development sector.",
+   
     metadataBase: new URL("https://cms.org.in/social-businesses"),
     openGraph: {
       url: "https://cms.org.in/social-businesses",
@@ -57,10 +55,22 @@ export function generateMetadata() {
         },
       ],
     },
+    alternates: {
+      canonical: "https://cms.org.in/social-businesses", // Static canonical URL
+    },
   }
 }
 
 const page = () => {
+  const seoField = {
+    title: "Social Enterprises Evolved from Catalyst: Impactful Ventures",
+    description:
+      "Discover how our thriving organisations like Catalyst Livelihood Ventures, Shoonya, and SHIP, driving change in the development sector.",
+    path: "social-businesses",
+    metaImage: "/social.png",
+    pageType: "WebSite"
+  };
+  
   return (
     <>
       {/* <NextSeo
@@ -79,6 +89,7 @@ const page = () => {
       </div> */}
 
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/socialBusinesses/banner.png')] flex flex-col justify-center md:justify-end h-[420px] md:h-[480px] bg-center bg-cover py-10 md:py-16">
+       <Seo {...seoField}/>
         <Header />
         <div className="ps-2 md:ps-24">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center sm:text-left">

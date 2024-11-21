@@ -1,76 +1,84 @@
-import Footer from "@/components/Footer/Footer"
-import InsightDetails from "@/components/Insights/InsightDetails"
-import axios from "axios"
+import InsightDetails from "@/components/Insights/InsightDetails";
+import Footer from "@/components/Footer/Footer";
+import axios from "axios";
+import configData from "@/config";
 
-export async function generateMetadata({ params }) {
-  let metadata = {
-    title: "",
-    description: "",
-    metadataBase: new URL(`https://cms.org.in/insights/${params.slug}`),
-    openGraph: {
-      url: `https://cms.org.in/insights/${params.slug}`,
-      title: "",
-      description: "",
-      images: [
-        {
-          url: "/social.png",
-          width: 800,
-          height: 600,
-          alt: "CMS",
-        },
-      ],
-    },
-  }
-
+async function fetchPostData(slug) {
   try {
     const response = await axios.get(
-      `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&slug=${params.slug}`
-    )
+      `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&slug=${slug}`
+    );
 
-    // Ensure response.data is an array and has at least one item
     if (Array.isArray(response.data) && response.data.length > 0) {
-      const data = response.data[0] // Assuming you want the first item
-
-      //console.log("Data fetched:", data)
-
-      // Ensure that `acf` exists on the data
-      if (data.acf) {
-        metadata.title =
-          data.acf.meta_title ||
-          "Integrated solutions to shape social equity | CMS"
-        metadata.description =
-          data.acf.meta_description ||
-          "We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration."
-        metadata.openGraph.title =
-          data.acf.meta_title ||
-          "Integrated solutions to shape social equity | CMS"
-        metadata.openGraph.description =
-          data.acf.meta_description ||
-          "We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration."
-      } else {
-        console.warn("ACF data not found on the fetched post")
-      }
-    } else {
-      console.warn("No posts found for the given slug")
+      const postData = response.data[0];
+      return {
+        metaTitle:
+          postData.acf?.meta_title ||
+          "Integrated solutions to shape social equity | CMS",
+        metaDescription:
+          postData.acf?.meta_description ||
+          "We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration.",
+        canonical: `${configData.websiteMainUrl}insights/${slug}`,
+      };
     }
+    console.warn("No ACF data found for the given slug");
   } catch (error) {
-    console.error("Error fetching metadata:", error)
+    console.error("Error fetching post data:", error.message);
   }
 
-  return metadata
+  return {
+    metaTitle: "Default Meta Title",
+    metaDescription: "Default meta description",
+    canonical: `${configData.websiteMainUrl}/insights/${slug}`,
+  };
 }
 
-const page = ({ params }) => {
-  const myUrl = params.slug
+const Page = async ({ params }) => {
+  const { slug } = params;
+  const { metaTitle, metaDescription, canonical } = await fetchPostData(slug);
 
   return (
     <>
-      <InsightDetails myUrl={myUrl} />
+      <head>
+        <meta charSet="utf-8" />
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDescription} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <link rel="icon" href="/images/cac_favicon-150x150.png" />
+        <link rel="canonical" href={canonical} />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:site_name" content="CMS" />
+        <meta property="og:image" content="/images/og_image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "WebSite",
+              name: "CMS",
+              url: canonical,
+              potentialAction: {
+                "@type": "SearchAction",
+                target: `${configData.websiteMainUrl}insights/${slug}{search_term_string}`,
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+      </head>
+      <InsightDetails myUrl={slug} />
       <div className="mt-auto">
         <Footer />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default page
+export default Page;

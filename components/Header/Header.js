@@ -5,6 +5,7 @@ import Link from "next/link"
 import { searchIcon } from "@/utils/icon"
 import Image from "next/image"
 import CurrentPath from "../CurrentPath/CurrentPath"
+import SearchModal from "../SearchBar/SearchBar"
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
@@ -215,14 +216,16 @@ const Header = () => {
                     Insights
                   </Link>
                 </li>
-                <li>
+                <li className="flex items-center lg:gap-7">
                   <Link
                     href="/contact-us"
                     className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0"
                   >
                     Contact Us
                   </Link>
+                  <SearchModal/>
                 </li>
+                
               </ul>
             </div>
           </div>

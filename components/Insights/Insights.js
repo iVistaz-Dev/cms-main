@@ -19,13 +19,11 @@ const Insights = () => {
   const [description, setDescription] = useState("")
 
   useEffect(() => {
-    // Load the active tab from localStorage if available
+    // Load the active tab from sessionStorage if available
     const savedTab = sessionStorage.getItem("activeTab")
-    if (savedTab) {
-      setActiveTab(savedTab)
-    } else {
-      setActiveTab(blogsTabs[0].path)
-    }
+    const initialTab = savedTab || blogsTabs[0].path // Default to first tab if no saved tab
+    setActiveTab(initialTab)
+    fetchDataForCategory(initialTab, 1) // Fetch data for the initial tab
   }, [])
 
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen)
