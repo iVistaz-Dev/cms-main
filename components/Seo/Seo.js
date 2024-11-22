@@ -32,7 +32,7 @@ function NextSeo({ title, description, path, metaImage }) {
             "@context": "https://schema.org/",
             "@type": "WebSite",
             name: "CMS",
-            url: `${configData.websiteMainUrl}${path}`,
+            url: `${configData.websiteMainUrl}`,
             potentialAction: {
               "@type": "SearchAction",
               target: `${configData.websiteMainUrl}${path}/{search_term_string}`,
