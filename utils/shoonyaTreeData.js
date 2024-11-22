@@ -132,7 +132,7 @@ export const startWithShoonyaData = [
     desc: "We don’t just plant trees; we’re planting hope for sustainable ecosystems",
   },
   {
-    imageUrl: "/startWithShoonya/image02.png",
+    imageUrl: "/startWithShoonya/image04.png",
     title: "Community Empowerment",
     desc: "Local farmers are empowered as land stewards",
   },
