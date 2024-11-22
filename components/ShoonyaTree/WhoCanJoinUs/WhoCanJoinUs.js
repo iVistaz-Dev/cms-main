@@ -53,7 +53,7 @@ const WhoCanJoinUs = ({ scrollToRef }) => {
   }
 
   return (
-    <div className="h-auto px-5 py-24 bg-[url('/banner03.png')] bg-cover">
+    <div className="h-auto px-5 py-24 bg-[url('/banner03.png')] bg-cover mt-5">
       <div className="flex flex-col items-center h-full gap-5 max-w-screen-xl mx-auto">
         <div className="flex flex-col items-center gap-4">
           <h1 className="text-2xl md:text-4xl text-[#486601] text-center font-semibold">
@@ -134,15 +134,3 @@ const WhoCanJoinUs = ({ scrollToRef }) => {
 }
 
 export default WhoCanJoinUs
-
-{
-  /* <button
-          onClick={handleScroll}
-          className="relative bg-white mt-5 text-base md:text-lg px-4 md:px-9 py-2 md:py-3 rounded-full ring-4 ring-shoonya-purple/40 shadow overflow-hidden group"
-        >
-          <span className="absolute inset-0 bg-shoonya-purple origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"></span>
-          <span className="relative z-10 md:text-lg text-shoonya-purple group-hover:text-white transition-colors duration-300 ease-in-out">
-            Join the Movement
-          </span>
-        </button> */
-}

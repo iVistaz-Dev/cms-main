@@ -67,7 +67,6 @@ body {
   margin-bottom: 40px !important;
 }
 
-
 /* Customize z-index and margins to achieve overlap */
 .relative.group .z-10 {
   z-index: 10;
@@ -85,4 +84,11 @@ body {
   }
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
 
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
