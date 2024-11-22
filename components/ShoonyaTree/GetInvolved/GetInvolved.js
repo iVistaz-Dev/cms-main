@@ -102,14 +102,10 @@ const GetInvolved = () => {
           : "border-[#95AA62] bg-[#EBEBC9]"
       } px-3 py-1.5 rounded flex items-center w-full md:w-1/2`}
     >
-      <label
-        htmlFor="name"
-        className="w-40 border-r border-[#95AA62] text-lg text-[#374708]"
-      >
+      <span className="w-40 border-r border-[#95AA62] text-lg text-[#374708]">
         Name
-      </label>
+      </span>
       <input
-        id="name"
         type="text"
         className="border-none outline-none focus:outline-none focus:ring-0 focus:border-transparent bg-transparent px-2 w-full text-[#374708]"
         value={userDetails.name}
@@ -132,14 +128,10 @@ const GetInvolved = () => {
           : "border-[#95AA62] bg-[#EBEBC9]"
       } px-3 py-1.5 rounded flex items-center w-full md:w-1/2`}
     >
-      <label
-        htmlFor="email"
-        className="w-40 border-r border-[#95AA62] text-lg text-[#374708]"
-      >
+      <span className="w-40 border-r border-[#95AA62] text-lg text-[#374708]">
         Email
-      </label>
+      </span>
       <input
-        id="email"
         type="email"
         className="border-none outline-none focus:outline-none focus:ring-0 focus:border-transparent bg-transparent px-2 w-full text-[#374708]"
         value={userDetails.email}
@@ -162,14 +154,10 @@ const GetInvolved = () => {
           : "border-[#95AA62] bg-[#EBEBC9]"
       } px-3 py-1.5 rounded flex items-center w-full md:w-1/2`}
     >
-      <label
-        htmlFor="organisation"
-        className="w-40 border-r border-[#95AA62] text-lg text-[#374708]"
-      >
+      <span className="w-40 border-r border-[#95AA62] text-lg text-[#374708]">
         Organisation
-      </label>
+      </span>
       <input
-        id="organisation"
         type="text"
         className="border-none outline-none focus:outline-none focus:ring-0 focus:border-transparent bg-transparent px-2 w-full text-[#374708]"
         value={userDetails.organisation}
@@ -195,14 +183,10 @@ const GetInvolved = () => {
             : "border-[#95AA62] bg-[#EBEBC9]"
         } px-3 py-1.5 rounded flex items-center w-full md:w-1/2`}
       >
-        <label
-          htmlFor="areYou"
-          className="w-40 border-r border-[#95AA62] text-lg text-[#374708]"
-        >
+        <span className="w-40 border-r border-[#95AA62] text-lg text-[#374708]">
           Are you
-        </label>
+        </span>
         <select
-          id="areYou"
           className="border-none outline-none focus:outline-none focus:ring-0 focus:border-transparent bg-transparent px-2 w-full text-[#374708]"
           value={userDetails.areYou}
           onChange={(e) =>
@@ -244,14 +228,10 @@ const GetInvolved = () => {
               : "border-[#95AA62] bg-[#EBEBC9]"
           } px-3 py-1.5 rounded flex items-center w-full md:w-1/2`}
         >
-          <label
-            htmlFor="specify"
-            className="w-40 border-r border-[#95AA62] text-lg text-[#374708]"
-          >
+          <span className="w-40 border-r border-[#95AA62] text-lg text-[#374708]">
             Specify
-          </label>
+          </span>
           <input
-            id="specify"
             type="text"
             placeholder="Please specify"
             value={userDetails.other}

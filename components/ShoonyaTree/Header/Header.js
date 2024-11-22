@@ -40,7 +40,7 @@ const Header = ({ scrollToRef }) => {
 
         <div className="flex flex-col items-center gap-8 md:gap-14 px-3">
           <h1 className="text-xl md:text-4xl text-shoonya-black font-semibold text-center">
-            Our Mission: Grow 1 Million Trees by 2030
+            We are on a mission to grow 1 Million trees by 2030
           </h1>
 
           <button
