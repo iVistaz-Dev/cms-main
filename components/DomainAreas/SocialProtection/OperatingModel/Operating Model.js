@@ -16,8 +16,8 @@ const OperatingModel = () => {
           />
         </div>
       </div>
-      <div className="flex-1 border-b py-5">
-        <div className="px-5 sm:px-20 py-5 w-full sm:w-10/12">
+      <div className="flex-1 border-b py-5 flex items-center">
+        <div className="p-5 sm:px-20 w-full sm:w-10/12">
           <div className="flex flex-col gap-5">
             <h3 className="text-3xl text-cms-primary">Operating Model</h3>
             <ul className="flex flex-col gap-5">
