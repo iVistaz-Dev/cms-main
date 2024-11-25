@@ -225,7 +225,6 @@ const Header = () => {
                   </Link>
                   {/* <SearchModal/> */}
                 </li>
-                
               </ul>
             </div>
           </div>

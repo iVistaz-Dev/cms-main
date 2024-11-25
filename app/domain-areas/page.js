@@ -1,8 +1,8 @@
-import DomainAreas from "@/components/DomainAreas/DomainAreas";
-import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
-import Tab from "@/components/Tab/Tab";
-import React from "react";
+import DomainAreas from "@/components/DomainAreas/DomainAreas"
+import Footer from "@/components/Footer/Footer"
+import Header from "@/components/Header/Header"
+import Tab from "@/components/Tab/Tab"
+import React from "react"
 import Seo from "../../components/Seo/Seo"
 export const tabs = [
   {
@@ -30,7 +30,12 @@ export const tabs = [
     tab: "ESG",
     link: "esg",
   },
-];
+  {
+    id: 6,
+    tab: "Social Protection",
+    link: "socialProtection",
+  },
+]
 
 const page = () => {
   const seoField = {
@@ -41,11 +46,11 @@ const page = () => {
     path: "domain-areas",
     metaImage: "/social.png",
     pageType: "WebSite",
-  };
+  }
   return (
     <>
       <div className="bg-[url('/domainAreas/banner.png')] flex flex-col justify-center md:justify-end h-[420px] md:h-[480px] w-full bg-center bg-cover py-10 md:py-16">
-       <Seo {...seoField}/>
+        <Seo {...seoField} />
         <Header />
         <div className="ps-2 md:ps-24">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center sm:text-left">
@@ -74,7 +79,7 @@ const page = () => {
         <Footer />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default page;
+export default page
