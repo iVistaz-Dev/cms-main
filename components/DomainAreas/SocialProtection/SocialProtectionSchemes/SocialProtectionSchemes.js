@@ -15,6 +15,8 @@ const SocialProtectionSchemes = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1200, // Max width for this breakpoint
@@ -33,18 +35,23 @@ const SocialProtectionSchemes = () => {
 
   return (
     <div className="px-5 py-14 flex flex-col items-center justify-center gap-10">
-      <h3 className="text-cms-primary text-3xl text-center">
+      {/* Section Heading */}
+      <h3 className="text-cms-primary text-2xl sm:text-3xl text-center font-semibold">
         Social Protection Schemes We Facilitate
       </h3>
+
+      {/* Slider Container */}
       <div className="w-full">
         <Slider {...settings}>
           {schemesData.map((item, idx) => (
-            <div key={idx} className="ps-14">
+            <div key={idx} className="px-4">
+              {" "}
+              {/* Adjusted padding for consistent spacing */}
               <Image
                 src={item.imageUrl}
                 width={250}
                 height={120}
-                className=""
+                className="mx-auto object-contain" // Ensured the image is well-aligned
                 alt={`Scheme ${idx + 1}`}
               />
             </div>
