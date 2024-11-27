@@ -1,10 +1,10 @@
-import "../styles/globals.css"  
+import "../styles/globals.css"
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="robots" content="index, follow" />
+        {/* <meta name="robots" content="index, follow" /> */}
         <meta name="msvalidate.01" content="A827D56A91561DA21E2E94273F4D52D5" />
         {/* <link rel="canonical" href="https://cms.org.in/" />  */}
         <script
@@ -13,11 +13,14 @@ export default function RootLayout({ children }) {
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-N6XCGCFT');`
+            })(window,document,'script','dataLayer','GTM-N6XCGCFT');`,
           }}
         />
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMHFBS4ZZE"></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZMHFBS4ZZE"
+        ></script>
         <script>
           {`
             window.dataLayer = window.dataLayer || [];
@@ -38,16 +41,11 @@ export default function RootLayout({ children }) {
             src="https://www.googletagmanager.com/ns.html?id=GTM-N6XCGCFT"
             height="0"
             width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
+            style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       </body>
     </html>
-
-
-
-
-    
   )
 }
