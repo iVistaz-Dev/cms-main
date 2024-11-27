@@ -11,7 +11,7 @@ const TheChallenges = () => {
           <h1 className="text-3xl font-semibold mb-6">The Challenges</h1>
         </div>
       </div>
-      <div className="flex-1">
+      <div className="flex-1 overflow-x-auto">
         <div className="w-full sm:w-10/12">
           <ul className="flex">
             {theChallengesData.map((item, idx) => {

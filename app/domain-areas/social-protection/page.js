@@ -15,6 +15,7 @@ import SocialProtectionSchemes from "@/components/DomainAreas/SocialProtection/S
 import Team from "@/components/AboutUs/Team/Team"
 import OurTeam from "@/components/DomainAreas/SocialProtection/OurTeam/OurTeam"
 import SuccessStories from "@/components/DomainAreas/SocialProtection/SuccessStories/SuccessStories"
+import TheChallengesNew from "@/components/DomainAreas/SocialProtection/TheChallenges/TheChallengesNew"
 
 export const tabs = [
   {
@@ -106,8 +107,9 @@ const page = () => {
       </div>
 
       <WhySocialProtection />
-      <TheChallenges />
-      <OurApproach />
+      {/* <TheChallenges />
+      <OurApproach /> */}
+      <TheChallengesNew />
       <OurAim />
       <SocialProtectionSchemes />
       <OurImpact />

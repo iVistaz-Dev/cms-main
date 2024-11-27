@@ -9,7 +9,7 @@ const OurApproach = () => {
           <h1 className="text-3xl font-semibold mb-6">Our Approach</h1>
         </div>
       </div>
-      <div className="flex-1 border-b">
+      <div className="flex-1 border-b overflow-x-auto">
         <div className="w-full sm:w-10/12">
           <ul className="flex">
             {ourApproachData.map((item, idx) => {
