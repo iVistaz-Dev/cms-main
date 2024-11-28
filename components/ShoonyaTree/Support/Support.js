@@ -62,12 +62,12 @@ const Support = () => {
         </div>
 
         <div className="flex flex-col gap-7 mt-5 text-center md:text-left">
-          <p className="text-lg md:text-xl text-[#141414]">
+          {/* <p className="text-lg md:text-xl text-[#141414]">
             <strong>How Your Donation Helps:</strong> Every ₹500 supports the
             growing of one tree.
-          </p>
+          </p> */}
 
-          <p className="text-lg md:text-xl text-[#141414]">
+          <p className="text-lg md:text-xl text-[#141414] mt-10">
             Donations directly contribute to our tree-growing initiatives and
             community engagement programs. Your support also helps maintain our
             existing green spaces and educates communities on sustainable
@@ -84,10 +84,10 @@ const Support = () => {
             <br /> For any queries or to know more about the Shoonya Tree
             Growing Campaign, <br /> please contact us at{" "}
             <a
-              href="mailto:vishrut@catalysts.org"
+              href="mailto:vishrut.shoonya@catalysts.org"
               className="text-shoonya-purple"
             >
-              vishrut@catalysts.org
+              vishrut.shoonya@catalysts.org
             </a>
           </p>
         </div>
