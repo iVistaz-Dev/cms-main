@@ -29,15 +29,14 @@ import React, { useEffect, useState } from "react"
 // ]
 
 const JobListing = () => {
-  
-  const [isOpening, setIsOpening] = useState(true)
+  const [isOpening, setIsOpening] = useState(false)
   const [openings, setOpenings] = useState([])
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://docs.cms.org.in/wp-json/wp/v2/career_openings?_embed&status=publish"
+          "https://docs.cms.org.in/wp-json/wp/v2/career_openings_now?_embed&status=publish"
         )
         console.log(response)
 
@@ -48,7 +47,7 @@ const JobListing = () => {
             return {
               id: item.id,
               title: item.title.rendered,
-              desc: item.acf.descriptions,
+              desc: item.content.rendered,
               link: item.acf.career_custom_url,
             }
           })
@@ -67,7 +66,6 @@ const JobListing = () => {
 
   return (
     <>
-
       <div className="flex flex-wrap justify-center">
         {openings.map((job) => (
           <div
