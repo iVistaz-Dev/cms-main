@@ -44,7 +44,7 @@ const Page = async ({ params }) => {
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="noindex, nofollow" />
         <link rel="icon" href="/images/cac_favicon-150x150.png" />
         <link rel="canonical" href={canonical} />
         <meta property="og:locale" content="en_US" />
