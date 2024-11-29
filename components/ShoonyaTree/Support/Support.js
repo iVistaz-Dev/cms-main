@@ -1,6 +1,6 @@
 const Support = () => {
   return (
-    <div className="h-auto px-5 pt-10 md:pt-24 pb-32 bg-[url('/banner07.png')] bg-cover">
+    <div className="h-auto px-5 pt-10 md:pt-24 pb-32 bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/shoonya-tree-landing-page/banner07.png')] bg-cover">
       <div className="flex flex-col items-center h-full gap-5 max-w-screen-lg mx-auto">
         <div className="flex flex-col items-center gap-4 text-center">
           <h1 className="text-2xl md:text-4xl text-[#486601] font-semibold">

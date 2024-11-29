@@ -6,7 +6,7 @@ import Glimpses from "./Glimpses/Glimpses"
 
 const OurWork = () => {
   return (
-    <div className="h-auto px-5 py-24 bg-[url('/banner09.png')] bg-cover md:mt-10">
+    <div className="h-auto px-5 py-24 bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/shoonya-tree-landing-page/banner09.png')] bg-cover md:mt-10">
       <div className="flex flex-col items-center h-full gap-5 max-w-screen-xl mx-auto">
         <h1 className="text-2xl md:text-4xl text-[#486601] text-center font-semibold">
           Our Work

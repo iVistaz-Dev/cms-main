@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const WhoDoWeAim = () => {
   return (
-    <div className="min-h-screen md:h-screen px-5 py-20 md:py-28 bg-[url('/banner10.png')] bg-cover bg-center">
+    <div className="min-h-screen md:h-screen px-5 py-20 md:py-28 bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/shoonya-tree-landing-page/banner10.png')] bg-cover bg-center">
       <div className="flex flex-col items-center h-full gap-5 max-w-screen-lg mx-auto">
         <div className="flex flex-col items-center gap-4">
           <h1 className="text-2xl md:text-4xl text-[#486601] text-center font-semibold">

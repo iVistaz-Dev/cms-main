@@ -20,7 +20,7 @@ const Header = ({ scrollToRef }) => {
   }
 
   return (
-    <div className="min-h-screen pb-12 md:pb-20 bg-[url('/banner01.png')] bg-cover bg-center flex justify-center">
+    <div className="min-h-screen pb-12 md:pb-20 bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/shoonya-tree-landing-page/banner01.png')] bg-cover bg-center flex justify-center">
       <div className="flex flex-col items-center text-white h-full gap-16 md:gap-20 mx-auto">
         <div className="bg-white px-8 py-6 md:px-12 md:py-8 rounded-b-2xl shadow">
           <Image src="/logo.svg" width={175} height={65} alt="shoonya logo" />

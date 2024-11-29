@@ -1,9 +1,5 @@
-Sitemap: https://cms.org.in/sitemap.xml
-
-# START YOAST BLOCK
-# ---------------------------
 User-agent: *
-Disallow: /
+Allow: 
+Disallow: /cgi-bin/
 
-# ---------------------------
-# END YOAST BLOCK
+Sitemap: https://cms.org.in/sitemap.xml
