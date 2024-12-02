@@ -4,7 +4,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="index, follow" />
         <meta name="msvalidate.01" content="A827D56A91561DA21E2E94273F4D52D5" />
         {/* <link rel="canonical" href="https://cms.org.in/" />  */}
         <script
@@ -45,6 +45,22 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "WebSite",
+              name: "CMS",
+              url: "https://cms.org.in",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://cms.org.in{search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
       </body>
     </html>
   )
