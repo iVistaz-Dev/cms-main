@@ -5,31 +5,31 @@ import Header from "@/components/Header/Header"
 import Seo from "../../../components/Seo/Seo"
 import React from "react"
 
-export function generateMetadata() {
-  return {
-    title: "Our Incubatees | CMS' Innovations and Entrepreneurial Ventures",
-    description:
-      "Explore CMS' incubatees and their groundbreaking ventures in technology, entrepreneurship, and social impact.",
-    metadataBase: new URL("https://cms.org.in"),
-    alternates: {
-      canonical: "/about-us/incubatees", // Relative path, resolved against metadataBase
-    },
-    openGraph: {
-      url: "https://cms.org.in/about-us/incubatees",
-      title: "Our Incubatees | CMS' Innovations and Entrepreneurial Ventures",
-      description:
-        "Explore CMS' incubatees and their groundbreaking ventures in technology, entrepreneurship, and social impact.",
-      images: [
-        {
-          url: "/social.png",
-          width: 800,
-          height: 600,
-          alt: "CMS",
-        },
-      ],
-    },
-  }
-}
+// export function generateMetadata() {
+//   return {
+//     title: "Our Incubatees | CMS' Innovations and Entrepreneurial Ventures",
+//     description:
+//       "Explore CMS' incubatees and their groundbreaking ventures in technology, entrepreneurship, and social impact.",
+//     metadataBase: new URL("https://cms.org.in"),
+//     alternates: {
+//       canonical: "/about-us/incubatees", // Relative path, resolved against metadataBase
+//     },
+//     openGraph: {
+//       url: "https://cms.org.in/about-us/incubatees",
+//       title: "Our Incubatees | CMS' Innovations and Entrepreneurial Ventures",
+//       description:
+//         "Explore CMS' incubatees and their groundbreaking ventures in technology, entrepreneurship, and social impact.",
+//       images: [
+//         {
+//           url: "/social.png",
+//           width: 800,
+//           height: 600,
+//           alt: "CMS",
+//         },
+//       ],
+//     },
+//   }
+// }
 
 const page = () => {
   const seoField = {
