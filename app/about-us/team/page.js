@@ -3,48 +3,49 @@ import Tab from "@/components/AboutUs/Tab/Tab"
 import Team from "@/components/AboutUs/Team/Team"
 import Footer from "@/components/Footer/Footer"
 import Header from "@/components/Header/Header"
+import Seo from "../../../components/Seo/Seo"
 import React from "react"
 
-export function generateMetadata() {
-  return {
-    title: "Our Team | Creating impact collectively",
-    description:
-      "Our team partners with multi-disciplinary teams to tackle challenges and maximise social returns",
-    metadataBase: new URL("https://cms.org.in"),
-    alternates: {
-      canonical: "/about-us/team", // Relative path, resolved against metadataBase
-    },
-    openGraph: {
-      url: "https://cms.org.in/about-us/team",
-      title: "Our Team | Creating impact collectively",
-      description:
-        "Our team partners with multi-disciplinary teams to tackle challenges and maximise social returns",
-      images: [
-        {
-          url: "/social.png",
-          width: 800,
-          height: 600,
-          alt: "CMS",
-        },
-      ],
-    },
-  }
-}
+// export function generateMetadata() {
+//   return {
+//     title: "Our Team | Creating impact collectively",
+//     description:
+//       "Our team partners with multi-disciplinary teams to tackle challenges and maximise social returns",
+//     metadataBase: new URL("https://cms.org.in"),
+//     alternates: {
+//       canonical: "/about-us/team", // Relative path, resolved against metadataBase
+//     },
+//     openGraph: {
+//       url: "https://cms.org.in/about-us/team",
+//       title: "Our Team | Creating impact collectively",
+//       description:
+//         "Our team partners with multi-disciplinary teams to tackle challenges and maximise social returns",
+//       images: [
+//         {
+//           url: "/social.png",
+//           width: 800,
+//           height: 600,
+//           alt: "CMS",
+//         },
+//       ],
+//     },
+//   }
+// }
 
 const page = () => {
-  // const seoField = {
-  //   title: "Our Team | Creating impact collectiviley",
-  //   description:
-  //     "Our team partners with multi-disciplinary teams to tackle challenges and maximise social returns",
-  //   path: "about-us/team",
-  //   metaImage: "/social.png",
-  //   pageType: "WebSite",
-  // };
+  const seoField = {
+    title: "Our Team | Creating impact collectiviley",
+    description:
+      "Our team partners with multi-disciplinary teams to tackle challenges and maximise social returns",
+    path: "about-us/team",
+    metaImage: "/social.png",
+    pageType: "WebSite",
+  }
   const desc =
     "Our team consists of dedicated mentors, impact specialists, and business experts. Meet the dedicated team at CMS, blending deep industry knowledge with a relentless pursuit of positive social change."
   return (
     <>
-      {/* <Seo {...seoField} /> */}
+      <Seo {...seoField} />
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/banner/banner02.png')] flex flex-col justify-center md:justify-end h-[420px] md:h-[480px] w-full bg-center bg-cover py-10 md:py-16">
         <Header />
         <div className="ps-2 md:ps-24">
