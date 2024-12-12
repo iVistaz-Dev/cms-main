@@ -1,5 +1,2 @@
 User-agent: *
-Allow: /
-Disallow: /cgi-bin/
-
-Sitemap: https://www.cms.org.in/sitemap.xml
+Disallow: /
