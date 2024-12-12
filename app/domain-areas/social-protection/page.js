@@ -55,7 +55,7 @@ const page = () => {
     title: "Strengthening health and community systems | Health",
     description:
       "We focus on strengthening health and community systems to achieve Universal Health Coverage, health equity quality primary care for all",
-    path: "domain-areas/health",
+    path: "domain-areas/social-protection",
     metaImage: "/social.png",
     pageType: "WebSite",
   }

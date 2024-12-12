@@ -20,28 +20,6 @@ const Tab = ({ tabs }) => {
   const activeTab = tabs.find((tab) => tab.id === isActive)
 
   return (
-    // <div className="bg-[#D7EEE8]">
-    //   <ul className="max-w-screen-xl mx-auto flex flex-wrap justify-center gap-2">
-    //     {tabs.map((item) => {
-    //       return (
-    //         <li key={item.id}>
-    //           <a href={`#${item.link}`}>
-    //             <button
-    //               className={`py-2 px-4 sm:py-3 sm:px-6 text-base sm:text-lg ${
-    //                 isActive === item.id
-    //                   ? "bg-[#98D5C5] text-cms-primary-gray border-b-2 border-cms-primary-green"
-    //                   : "text-[#404040] border-none"
-    //               }`}
-    //               onClick={() => setIsActive(item.id)}
-    //             >
-    //               {item.tab}
-    //             </button>
-    //           </a>
-    //         </li>
-    //       )
-    //     })}
-    //   </ul>
-    // </div>
     <div className="bg-[#D7EEE8]">
       {isMobile ? (
         <div className="max-w-screen-xl mx-auto p-4">

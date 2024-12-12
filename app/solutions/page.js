@@ -4,6 +4,7 @@ import ScaleAccelerators from "@/components/ScaleAccelerators/ScaleAccelerators"
 import Tab from "@/components/Tab/Tab"
 import React from "react"
 import Seo from "../../components/Seo/Seo"
+
 export const tabs = [
   {
     id: 1,
@@ -22,28 +23,19 @@ export const tabs = [
   },
 ]
 
-
-
 const page = () => {
-  
   const seoField = {
     title: "Effective Solutions for Scalable and Sustainable Development",
     description:
-      "Collaborate with change agents to design, implement, and scale evidence-based solutions that drive impactful, sustainable growth and enhance social equity.",  
+      "Collaborate with change agents to design, implement, and scale evidence-based solutions that drive impactful, sustainable growth and enhance social equity.",
     path: "solutions",
     metaImage: "/social.png",
-    pageType: "WebSite"
-  };
+    pageType: "WebSite",
+  }
   return (
     <>
-      {/* <NextSeo
-        title="Effective Solutions for Scalable and Sustainable Development"
-        description="Collaborate with change agents to design, implement, and scale evidence-based solutions that drive impactful, sustainable growth and enhance social equity."
-        path="https://cms.org.in/solutions"
-        metaImage=""
-      /> */}
+      <Seo {...seoField} />
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/scaleAccelerators/banner.png')] flex flex-col justify-center md:justify-end h-[420px] md:h-[480px] bg-center bg-cover py-10 md:py-16">
-        <Seo {...seoField}/>
         <Header />
         <div className="ps-2 md:ps-24">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center sm:text-left">
