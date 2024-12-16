@@ -30,11 +30,11 @@ export const tabs = [
     tab: "ESG",
     link: "esg",
   },
-  // {
-  //   id: 6,
-  //   tab: "Social Protection",
-  //   link: "socialProtection",
-  // },
+  {
+    id: 6,
+    tab: "Social Protection",
+    link: "socialProtection",
+  },
 ]
 
 const page = () => {
