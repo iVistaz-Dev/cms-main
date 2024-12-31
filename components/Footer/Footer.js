@@ -240,7 +240,7 @@ const Footer = () => {
       </div>
       <div className="bg-[#000000] py-4 text-white text-center">
         <p className="text-[#CBCBCB]">
-          © 2024 Catalyst Management Services Pvt. Ltd.{" "}
+          © {new Date().getFullYear()} Catalyst Management Services Pvt. Ltd.{" "}
           <br className="block md:hidden" /> All rights reserved.
         </p>
       </div>
