@@ -78,7 +78,7 @@ const JobListing = () => {
               <h3 className="text-xl font-semibold">{job.title}</h3>
               <div className="absolute right-[-10px] top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-[20px] border-t-transparent border-b-[20px] border-b-transparent border-l-[10px] border-l-current"></div>
             </div>
-            <div className="flex px-8 py-10 flex-col gap-4 w-full md:w-2/3">
+            <div className="flex lg:px-8 lg:py-10 px-3 py-3 flex-col gap-4 w-full md:w-2/3">
               <div className="flex flex-wrap">
                 <div className="flex flex-col items-start space-y-2 w-full p-2">
                   {/* <div className="w-7 border-b-2 border-cms-primary-green" /> */}
