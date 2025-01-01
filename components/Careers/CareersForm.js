@@ -18,6 +18,7 @@ const CareersForm = () => {
   })
 
   const [errors, setErrors] = useState({})
+  const [isSubmitted, setIsSubmitted] = useState(false) // New state for submission status
 
   const validateForm = () => {
     let formErrors = {}
@@ -72,6 +73,7 @@ const CareersForm = () => {
           consent: false,
         })
         setErrors({})
+        setIsSubmitted(true) // Set to true on successful submission
       } catch (error) {
         console.error("There was an error submitting the form:", error)
         setErrors({
@@ -97,139 +99,149 @@ const CareersForm = () => {
           />
         </div>
 
-        <div className="bg-cms-secondary-green w-full flex flex-col text-white py-12 lg:py-5 px-6 lg:px-10">
-          <h3 className="text-xl lg:text-2xl font-semibold text-cms-primary">
-            Apply Now
-          </h3>
-
-          <p className="text-lg text-[#404040]">
-            We will get back to you as soon as we have any suitable openings
-            that might arise at CMS.
-          </p>
-
-          <form
-            className="max-w-screen-lg mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-[#404040]"
-            onSubmit={handleSubmit}
-          >
-            <div>
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                className="p-2 border border-gray-300 rounded w-full"
-                value={formData.name}
-                onChange={handleChange}
-              />
-              {errors.name && (
-                <p className="text-red-500 text-sm">{errors.name}</p>
-              )}
+        <div className="bg-cms-secondary-green w-full flex flex-col text-white py-12 lg:py-5 px-6 lg:px-10 justify-center">
+          {isSubmitted ? (
+            <div className="text-center">
+              <h3 className="text-2xl font-semibold text-cms-primary">
+                Thank You!
+              </h3>
+              <p className="text-lg text-[#404040] mt-4">
+                Your application has been submitted successfully. We will get
+                back to you soon.
+              </p>
             </div>
+          ) : (
+            <>
+              <h3 className="text-xl lg:text-2xl font-semibold text-cms-primary">
+                Apply Now
+              </h3>
+              <p className="text-lg text-[#404040]">
+                We will get back to you as soon as we have any suitable openings
+                that might arise at CMS.
+              </p>
 
-            <div>
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                className="p-2 border border-gray-300 rounded w-full"
-                value={formData.email}
-                onChange={handleChange}
-              />
-              {errors.email && (
-                <p className="text-red-500 text-sm">{errors.email}</p>
-              )}
-            </div>
-
-            <div>
-              <select
-                name="position"
-                className="p-2 border border-gray-300 rounded w-full"
-                value={formData.position}
-                onChange={handleChange}
+              <form
+                className="max-w-screen-lg mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-[#404040]"
+                onSubmit={handleSubmit}
               >
-                <option value="" disabled>
-                  Select Department
-                </option>
-                <option value="livelihood">Livelihood</option>
-                <option value="health">Health</option>
-                <option value="climateChange">Climate Change</option>
-                <option value="wellbeingForWorkforce">
-                  Wellbeing for Workforce
-                </option>
-                <option value="esg">ESG</option>
-                <option value="designForSuccess">Design for Success</option>
-                <option value="evidenceForChange">Evidence for Change</option>
-                <option value="implementForScale">Implement for Scale</option>
-                <option value="catalystLivelihoodVentures">
-                  Catalyst Livelihood Ventures
-                </option>
-                <option value="businessCatalyst">Business Catalyst</option>
-                <option value="shoonya">Shoonya</option>
-                <option value="ship">SHIP</option>
-                <option value="marketingAndCommunication">
-                  Marketing and Communication
-                </option>
-                <option value="mealAssociate">MEAL Associate</option>
-              </select>
-              {errors.position && (
-                <p className="text-red-500 text-sm">{errors.position}</p>
-              )}
-            </div>
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    className="p-2 border border-gray-300 rounded w-full"
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
+                  {errors.name && (
+                    <p className="text-red-500 text-sm">{errors.name}</p>
+                  )}
+                </div>
 
-            <div className="relative">
-              <input
-                type="file"
-                name="file"
-                id="file"
-                className="absolute inset-0 w-full h-full opacity-0 z-50"
-                onChange={handleChange}
-              />
-              <div className=" border border-gray-300 bg-white rounded w-full text-[#404040]">
-                <p className="flex items-center gap-2 p-2">
-                  {formData.file ? formData.file.name : "Upload CV"}
-                  {!formData.file && uploadIcon}
-                </p>
-              </div>
-              {errors.file && (
-                <p className="text-red-500 text-sm">{errors.file}</p>
-              )}
-            </div>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    className="p-2 border border-gray-300 rounded w-full"
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                  {errors.email && (
+                    <p className="text-red-500 text-sm">{errors.email}</p>
+                  )}
+                </div>
 
-            <div className="col-span-full flex items-start mt-4">
-              <input
-                type="checkbox"
-                name="consent"
-                className="mt-1 mr-2"
-                checked={formData.consent}
-                onChange={handleChange}
-              />
-              <div>
-                <label className="text-sm">
-                  I consent to having this website store my submitted
-                  information so they can respond to my inquiry. See our{" "}
-                  <Link href="/privacy-policy" className="text-blue-500">
-                    privacy policy
-                  </Link>{" "}
-                  to learn more about how we use data.
-                </label>
-                {errors.consent && (
-                  <p className="text-red-500 text-sm">{errors.consent}</p>
-                )}
-              </div>
-            </div>
+                <div>
+                  <select
+                    name="position"
+                    className="p-2 border border-gray-300 rounded w-full"
+                    value={formData.position}
+                    onChange={handleChange}
+                  >
+                    <option value="" disabled>
+                      Select Department
+                    </option>
+                    <option value="livelihood">Livelihood</option>
+                    <option value="health">Health</option>
+                    <option value="climateChange">Climate Change</option>
+                    <option value="wellbeingForWorkforce">
+                      Wellbeing for Workforce
+                    </option>
+                    <option value="esg">ESG</option>
+                    <option value="designForSuccess">Design for Success</option>
+                    <option value="evidenceForChange">Evidence for Change</option>
+                    <option value="implementForScale">Implement for Scale</option>
+                    <option value="catalystLivelihoodVentures">
+                      Catalyst Livelihood Ventures
+                    </option>
+                    <option value="businessCatalyst">Business Catalyst</option>
+                    <option value="shoonya">Shoonya</option>
+                    <option value="ship">SHIP</option>
+                    <option value="marketingAndCommunication">
+                      Marketing and Communication
+                    </option>
+                    <option value="mealAssociate">MEAL Associate</option>
+                  </select>
+                  {errors.position && (
+                    <p className="text-red-500 text-sm">{errors.position}</p>
+                  )}
+                </div>
 
-            <button
-              type="submit"
-              className="bg-cms-primary-green text-white py-2 rounded mt-4"
-            >
-              Send
-            </button>
-          </form>
+                <div className="relative">
+                  <input
+                    type="file"
+                    name="file"
+                    id="file"
+                    className="absolute inset-0 w-full h-full opacity-0 z-50"
+                    onChange={handleChange}
+                    accept=".pdf,.doc,.docx"
+                  />
+                  <div className="border border-gray-300 bg-white rounded w-full text-[#404040]">
+                    <p className="flex items-center gap-2 p-2">
+                      {formData.file ? formData.file.name : "Upload CV"}
+                      {!formData.file && uploadIcon}
+                    </p>
+                  </div>
+                  {errors.file && (
+                    <p className="text-red-500 text-sm">{errors.file}</p>
+                  )}
+                </div>
+
+                <div className="col-span-full flex items-start mt-4">
+                  <input
+                    type="checkbox"
+                    name="consent"
+                    className="mt-1 mr-2"
+                    checked={formData.consent}
+                    onChange={handleChange}
+                  />
+                  <div>
+                    <label className="text-sm">
+                      I consent to having this website store my submitted
+                      information so they can respond to my inquiry. See our{" "}
+                      <Link href="/privacy-policy" className="text-blue-500">
+                        privacy policy
+                      </Link>{" "}
+                      to learn more about how we use data.
+                    </label>
+                    {errors.consent && (
+                      <p className="text-red-500 text-sm">{errors.consent}</p>
+                    )}
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  className="bg-cms-primary-green text-white py-2 rounded mt-4"
+                >
+                  Send
+                </button>
+              </form>
+            </>
+          )}
         </div>
       </div>
-
-      {/* <div className="mt-auto">
-        <Footer />
-      </div> */}
     </>
   )
 }

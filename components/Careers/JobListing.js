@@ -96,11 +96,13 @@ const JobListing = () => {
                 </div>
               ))} */}
               </div>
-              <Link href={job.link} target="_blank">
-                <button className="mt-4 px-4 py-2 self-start border border-cms-primary text-cms-primary hover:bg-purple-100">
-                  More Details
-                </button>
-              </Link>
+              {job.link && (
+                <Link href={job.link} target="_blank">
+                  <button className="mt-4 px-4 py-2 self-start border border-cms-primary text-cms-primary hover:bg-purple-100">
+                    More Details
+                  </button>
+                </Link>
+              )}
             </div>
           </div>
         ))}
