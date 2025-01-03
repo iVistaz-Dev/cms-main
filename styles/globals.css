@@ -92,3 +92,7 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.color-purple {
+  color: #7F3E94;
+}
