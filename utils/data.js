@@ -879,7 +879,7 @@ export const socialBusinessesData = [
     target: "_blank",
     desc: "We aim to help businesses, particularly MSMEs, achieve growth and profitability by increasing turnover and creating a sustainable expansion strategy. Our approach includes reducing costs through minimised credit expenses, leveraging government schemes, and risk mitigation; improving supply chains by enhancing processes and making strategic investments in materials and production; and supporting steady income and secure livelihoods by focusing on workforce wellbeing. These efforts are designed to foster not only business growth but also a stable financial future for the communities we serve.",
     desc2: "",
-    path: "https://business-catalyst.cms.org.in",
+    path: "https://cms.org.in/business-catalyst/",
     link: "businessCatalyst",
   },
   {
