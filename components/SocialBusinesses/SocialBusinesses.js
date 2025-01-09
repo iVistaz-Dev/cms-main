@@ -10,14 +10,12 @@ const SocialBusinesses = () => {
         return (
           <li key={item.id} id={item.link}>
             <div
-              className={`flex flex-col sm:flex-row justify-between items-center w-full sm:w-11/12 ${
-                item.id % 2 === 0 ? "sm:ms-auto" : ""
-              }`}
+              className={`flex flex-col sm:flex-row justify-between items-center w-full sm:w-11/12 ${item.id % 2 === 0 ? "sm:ms-auto" : ""
+                }`}
             >
               <div
-                className={`w-full sm:w-auto ${
-                  item.id % 2 === 0 ? "sm:order-1" : ""
-                }`}
+                className={`w-full sm:w-auto ${item.id % 2 === 0 ? "sm:order-1" : ""
+                  }`}
               >
                 <Image src={item.imageUrl} height={400} width={600} alt="" />
               </div>
@@ -35,7 +33,7 @@ const SocialBusinesses = () => {
                   className="text-sm sm:text-lg font-semibold text-[#646464]"
                 ></p>
 
-                <Link href={item.path} target={item.target}>
+                <Link href={item.path} target={item.target} rel="noopener noreferrer">
                   <button className="border border-cms-primary text-[#1A1A1A] text-base sm:text-lg rounded px-4 sm:px-6 py-2 transition duration-300 ease-in-out hover:bg-cms-primary hover:text-white">
                     Know more
                   </button>
