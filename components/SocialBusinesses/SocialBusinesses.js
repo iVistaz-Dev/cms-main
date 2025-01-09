@@ -1,9 +1,17 @@
-import { domainAreasData, socialBusinessesData } from "@/utils/data"
+"use client"
+
+import { socialBusinessesData } from "@/utils/data"
 import Image from "next/image"
 import Link from "next/link"
-import React from "react"
+import React, { useEffect } from "react"
 
 const SocialBusinesses = () => {
+  useEffect(() => {
+    if (window.history.replaceState) {
+      const cleanUrl = window.location.origin + window.location.pathname
+      window.history.replaceState(null, null, cleanUrl)
+    }
+  }, [])
   return (
     <ul className="flex flex-col gap-8 sm:gap-16 my-10 sm:my-14">
       {socialBusinessesData.map((item) => {
@@ -35,7 +43,7 @@ const SocialBusinesses = () => {
                   className="text-sm sm:text-lg font-semibold text-[#646464]"
                 ></p>
 
-                <Link href={item.path} target={item.target}>
+                <Link href={item.path} target={item.target} rel="canonical">
                   <button className="border border-cms-primary text-[#1A1A1A] text-base sm:text-lg rounded px-4 sm:px-6 py-2 transition duration-300 ease-in-out hover:bg-cms-primary hover:text-white">
                     Know more
                   </button>

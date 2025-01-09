@@ -21,11 +21,11 @@ const nextConfig = {
         destination: "/blogs/:slug",
         permanent: true,
       },
-      // {
-      //   source: "/domain-areas/social-protection",
-      //   destination: "/",
-      //   permanent: true,
-      // },
+      {
+        source: "/domain-areas/social-protection",
+        destination: "/",
+        permanent: true,
+      },
     ]
   },
 }
