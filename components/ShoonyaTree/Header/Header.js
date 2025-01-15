@@ -87,7 +87,7 @@ const Header = ({ scrollToRef }) => {
         <div className="flex flex-col items-center gap-5 md:gap-7 mt-5 w-full md:w-3/4 px-4">
           <h2 className="text-shoonya-black text-lg md:text-3xl text-center">
             Our initiative began with a simple commitment, to work together and
-            give back to the Earth and her people.
+            give back to the Earth and her people
           </h2>
 
           <p className="text-sm md:text-lg text-[#141414] text-center mt-5">
