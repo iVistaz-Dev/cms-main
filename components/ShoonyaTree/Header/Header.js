@@ -21,7 +21,7 @@ const Header = ({ scrollToRef }) => {
 
   return (
     <div className="min-h-screen pb-12 md:pb-20 bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/shoonya-tree-landing-page/banner01.png')] bg-cover bg-center flex justify-center">
-      <div className="flex flex-col items-center text-white h-full gap-16 md:gap-20 mx-auto">
+      <div className="flex flex-col items-center text-white h-full gap-16 md:gap-20 mx-auto w-full">
         <div className="bg-white px-8 py-6 md:px-12 md:py-8 rounded-b-2xl shadow">
           <Image src="/logo.svg" width={175} height={65} alt="shoonya logo" />
         </div>
@@ -52,10 +52,11 @@ const Header = ({ scrollToRef }) => {
           </button>
         </div>
 
-        <div className="w-full mt-8 md:mt-10">
+        {/* Fixed video container */}
+        <div className="w-full flex justify-center mt-8 md:mt-10">
           <video
             src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/shoonya/5382493-hd_1280_720_24fps.mp4"
-            className="w-full h-auto max-h-[300px] md:max-h-none"
+            className="w-full max-w-none h-auto"
             autoPlay
             muted
             loop
@@ -86,22 +87,17 @@ const Header = ({ scrollToRef }) => {
         <div className="flex flex-col items-center gap-5 md:gap-7 mt-5 w-full md:w-3/4 px-4">
           <h2 className="text-shoonya-black text-lg md:text-3xl text-center">
             Our initiative began with a simple commitment, to work together and
-            give back to the Earth and her people. With a deep-rooted focus on
-            ecological balance and community empowerment, we aim for lasting
-            sustainable impact.
+            give back to the Earth and her people.
           </h2>
 
-          <p className="text-sm md:text-lg text-[#141414] text-center mt-5 md:mt-10">
-            Our vision is clear: to create a greener, more resilient planet by
-            supporting the growth of native trees that support biodiversity and
-            provide long-term benefits to both nature and people. Every tree
-            planted today moves us closer to the ultimate goal,{" "}
+          <p className="text-sm md:text-lg text-[#141414] text-center mt-5">
+            Every tree planted today brings us closer to
             <span className="font-semibold">a net zero future</span>.
           </p>
 
           <p className="text-sm md:text-lg text-[#141414] text-center font-semibold">
-            This is more than a project; it’s a collective act of love for the
-            land we call home.
+            This is more than a project; it’s a collective act of love for our
+            shared home.
           </p>
         </div>
       </div>
