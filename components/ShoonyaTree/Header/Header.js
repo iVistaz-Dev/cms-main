@@ -92,7 +92,7 @@ const Header = ({ scrollToRef }) => {
 
           <p className="text-sm md:text-lg text-[#141414] text-center mt-5">
             Every tree planted today brings us closer to
-            <span className="font-semibold">a net zero future</span>.
+            <span className="font-semibold"> a net zero future</span>.
           </p>
 
           <p className="text-sm md:text-lg text-[#141414] text-center font-semibold">
