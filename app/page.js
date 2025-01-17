@@ -9,20 +9,31 @@ export default function Home() {
   const seoField = {
     title: "Integrated solutions to shape social equity | CMS",
     description:
-      "We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration.",    path: "",
+      "We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration.",
+    path: "",
     metaImage: "/social.png",
-    pageType: "WebSite"
-  };
+    pageType: "WebSite",
+  }
   return (
     <>
-      <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/banner-comp.jpeg')] flex flex-col justify-center md:justify-end h-[275px] md:[720px] bg-center bg-cover py-10 md:py-16 sm:h-[500px] md:h-[500px]">
-        <Seo {...seoField}/>
-        <Header />
-        <div className="ps-2 md:ps-24">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center sm:text-left">
-            Scaling Impact for a <br className="hidden sm:block" /> Sustainable
-            Future
-          </h1>
+      <div className="relative flex flex-col justify-center md:justify-end h-[275px] bg-center bg-cover py-10 md:py-16 sm:h-[500px]">
+        <video
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/bannerV4.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        ></video>
+        <div className="relative z-10">
+          <Seo {...seoField} />
+          <Header />
+          {/* <div className="ps-2 md:ps-24">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center sm:text-left">
+              Scaling Impact for a <br className="hidden sm:block" />{" "}
+              Sustainable Future
+            </h1>
+          </div> */}
         </div>
       </div>
 
