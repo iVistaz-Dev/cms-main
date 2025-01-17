@@ -13,14 +13,14 @@ const page = () => {
       "Driving sustainable equity by impacting 100M lives through UN SDG alignment, integrated solutions, and strategic investments by 2030. Join our mission today!",
     path: "about-us/vision",
     metaImage: "/social.png",
-    pageType: "WebSite"
-  };
+    pageType: "WebSite",
+  }
   const desc =
     "A future where holistic and well-orchestrated partnerships and investments create an impact that is transformational, driving sustainable and scalable equity."
   return (
     <>
-      <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/banner/banner01.png')] flex flex-col justify-center md:justify-end h-[420px] md:[720px] w-full bg-cover bg-center py-10 md:py-16 sm:h-[500px] md:h-[600px] lg:h-[720px]">
-        <Seo {...seoField}/>
+      <div className="bg-[url('/banner/banner01.png')] flex flex-col justify-center md:justify-end h-[420px] md:[720px] w-full bg-cover bg-center py-10 md:py-16 sm:h-[500px] md:h-[600px] lg:h-[720px]">
+        <Seo {...seoField} />
         <Header />
         <div className="ps-2 md:ps-24">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center sm:text-left">
