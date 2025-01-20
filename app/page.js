@@ -19,7 +19,7 @@ export default function Home() {
       <div className="relative flex flex-col justify-center md:justify-end h-[275px] bg-center bg-cover py-10 md:py-16 sm:h-[500px]">
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"
-          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/bannerV4.mp4"
+          src="https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/CMS+Banner+V5.mp4"
           autoPlay
           muted
           loop
