@@ -63,7 +63,7 @@ export const teamData = [
       "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image02.png",
     name: "Raghunathan N",
     desc: "Co-Founder, Director",
-    inUrl: "https://www.linkedin.com/in/raghunathan-narayanan-495b587/",
+    inUrl: "https://www.linkedin.com/in/raghunathan-n-495b587/",
     xurl: "https://x.com/?lang=en",
   },
   {
@@ -451,19 +451,19 @@ export const domainAreasData = [
     path: "/esg",
     link: "esg",
   },
-  {
-    id: 6,
-    imageUrl: "/domainAreas/social-protection.png",
-    mobImageUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/domainAreas/mImage04.png",
-    logoUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/domainAreas/logo04.png",
-    title: "Social Protection",
-    target: "_self",
-    desc: "Millions in India face challenges accessing essential social protection services due to issues with delivery, awareness, and accessibility. Initiatives are underway to streamline access through help desks and targeted awareness campaigns, aiming to enhance the effectiveness of government programs. This approach supports economic stability, health security, and environmental safety, fostering long-term resilience and equitable growth.",
-    path: "/domain-areas/social-protection",
-    link: "socialProtection",
-  },
+  // {
+  //   id: 6,
+  //   imageUrl: "/domainAreas/social-protection.png",
+  //   mobImageUrl:
+  //     "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/domainAreas/mImage04.png",
+  //   logoUrl:
+  //     "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/domainAreas/logo04.png",
+  //   title: "Social Protection",
+  //   target: "_self",
+  //   desc: "Millions in India face challenges accessing essential social protection services due to issues with delivery, awareness, and accessibility. Initiatives are underway to streamline access through help desks and targeted awareness campaigns, aiming to enhance the effectiveness of government programs. This approach supports economic stability, health security, and environmental safety, fostering long-term resilience and equitable growth.",
+  //   path: "/domain-areas/social-protection",
+  //   link: "socialProtection",
+  // },
 ]
 
 export const investmentData = [
