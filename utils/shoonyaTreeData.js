@@ -179,6 +179,7 @@ export const ourWorkData = [
         height: 123,
       },
     ],
+    desc: "70,000+ trees grown",
   },
   {
     title: "Communities",
@@ -190,6 +191,7 @@ export const ourWorkData = [
         height: 60,
       },
     ],
+    desc: "",
   },
   {
     title: "Species",
@@ -201,6 +203,7 @@ export const ourWorkData = [
         height: 70,
       },
     ],
+    desc: "",
   },
 ]
 

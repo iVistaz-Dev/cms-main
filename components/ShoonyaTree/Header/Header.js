@@ -90,14 +90,20 @@ const Header = ({ scrollToRef }) => {
             give back to the Earth and her people
           </h2>
 
-          <p className="text-sm md:text-lg text-[#141414] text-center mt-5">
+          <p className="text-sm md:text-[22px] text-[#141414] text-center">
+            Since that first step, over{" "}
+            <span className="font-semibold">70,000+</span> trees have been
+            planted across Karnataka and Maharashtra
+          </p>
+
+          <p className="text-sm md:text-lg text-[#141414] text-center">
             Every tree planted today brings us closer to a{" "}
-            <span className="font-semibold">Net Zero future</span>.
+            <span className="font-semibold">Net Zero future</span>
           </p>
 
           <p className="text-sm md:text-lg text-[#141414] text-center font-semibold">
             This is more than a project; it’s a collective act of love for our
-            shared home.
+            shared home
           </p>
         </div>
       </div>

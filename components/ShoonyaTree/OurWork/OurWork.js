@@ -50,6 +50,8 @@ const OurWork = () => {
                         )
                       })}
                     </ul>
+
+                    {/* <p className="text-[#020202] mx-auto mt-2">{item.desc}</p> */}
                   </div>
                 </li>
               )
