@@ -129,9 +129,9 @@ export const ourPartnersData = [
   {
     imageUrl: "/domainAreas/social-protection/our-partners/img08.png",
   },
-  {
-    imageUrl: "/domainAreas/social-protection/our-partners/img09.png",
-  },
+  // {
+  //   imageUrl: "/domainAreas/social-protection/our-partners/img09.png",
+  // },
   {
     imageUrl: "/domainAreas/social-protection/our-partners/img10.png",
   },
