@@ -448,7 +448,7 @@ export const domainAreasData = [
     title: "ESG",
     target: "_blank",
     desc: "In a world where the impacts of our actions resonate far beyond immediate boundaries, the need for comprehensive sustainability practices becomes crucial. We understand that it’s no longer sufficient for organisations to focus solely on direct controls within their operations. True sustainability requires a holistic approach, extending responsible business practices throughout the entire value chain. This can be achieved by implementing changes in policy and practice that focus on people, the planet, and sustainable outcomes.",
-    path: "esg",
+    path: "/esg",
     link: "esg",
   },
   // {
