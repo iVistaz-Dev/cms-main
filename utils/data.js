@@ -448,22 +448,22 @@ export const domainAreasData = [
     title: "ESG",
     target: "_blank",
     desc: "In a world where the impacts of our actions resonate far beyond immediate boundaries, the need for comprehensive sustainability practices becomes crucial. We understand that it’s no longer sufficient for organisations to focus solely on direct controls within their operations. True sustainability requires a holistic approach, extending responsible business practices throughout the entire value chain. This can be achieved by implementing changes in policy and practice that focus on people, the planet, and sustainable outcomes.",
-    path: "/esg",
+    path: "https://esg.cms.org.in/",
     link: "esg",
   },
-  {
-    id: 6,
-    imageUrl: "/domainAreas/social-protection.png",
-    mobImageUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/domainAreas/mImage04.png",
-    logoUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/domainAreas/logo04.png",
-    title: "Social Protection",
-    target: "_self",
-    desc: "Millions in India face challenges accessing essential social protection services due to issues with delivery, awareness, and accessibility. Initiatives are underway to streamline access through help desks and targeted awareness campaigns, aiming to enhance the effectiveness of government programs. This approach supports economic stability, health security, and environmental safety, fostering long-term resilience and equitable growth.",
-    path: "/domain-areas/social-protection",
-    link: "socialProtection",
-  },
+  // {
+  //   id: 6,
+  //   imageUrl: "/domainAreas/social-protection.png",
+  //   mobImageUrl:
+  //     "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/domainAreas/mImage04.png",
+  //   logoUrl:
+  //     "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/domainAreas/logo04.png",
+  //   title: "Social Protection",
+  //   target: "_self",
+  //   desc: "Millions in India face challenges accessing essential social protection services due to issues with delivery, awareness, and accessibility. Initiatives are underway to streamline access through help desks and targeted awareness campaigns, aiming to enhance the effectiveness of government programs. This approach supports economic stability, health security, and environmental safety, fostering long-term resilience and equitable growth.",
+  //   path: "/domain-areas/social-protection",
+  //   link: "socialProtection",
+  // },
 ]
 
 export const investmentData = [
