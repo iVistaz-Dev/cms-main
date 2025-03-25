@@ -27,6 +27,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/collaborative-initiatives",
+        destination: "/collaborative-orchestrations",
+        permanent: true,
+      },
+      {
         source: "/esg",
         destination: "https://esg.cms.org.in/",
         permanent: true,

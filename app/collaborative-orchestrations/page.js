@@ -1,9 +1,9 @@
-import CollaborativeInitiatives from "@/components/CollaborativeInitiatives/CollaborativeInitiatives";
-import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
-import Tab from "@/components/Tab/Tab";
-import React from "react";
-import Seo from "../../components/Seo/Seo";
+import CollaborativeInitiatives from "@/components/CollaborativeInitiatives/CollaborativeInitiatives"
+import Footer from "@/components/Footer/Footer"
+import Header from "@/components/Header/Header"
+import Tab from "@/components/Tab/Tab"
+import React from "react"
+import Seo from "../../components/Seo/Seo"
 
 export const tabs = [
   {
@@ -16,10 +16,7 @@ export const tabs = [
     tab: "Catalysing Social Impact (CSI)",
     link: "catalysingSocialImpact",
   },
-];
-
-
-
+]
 
 const page = () => {
   const seoField = {
@@ -28,19 +25,19 @@ const page = () => {
       "CMS drives impactful initiatives, ensuring vulnerable communities gain access to essential services and fostering sustainable development with social equity.",
     path: "collaborative-initiatives",
     metaImage: "/social.png",
-    pageType: "WebSite"
-  };
-  
+    pageType: "WebSite",
+  }
+
   return (
     <>
       {/* Pass props to the SEO component */}
 
-      <Seo {...seoField}/>
+      <Seo {...seoField} />
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/collaborativeInitiatives/banner.png')] flex flex-col justify-center md:justify-end h-[420px] md:h-[480px] bg-center bg-cover py-10 md:py-16">
         <Header />
         <div className="ps-2 md:ps-24">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center sm:text-left">
-            Collaborative Initiatives
+            Collaborative Orchestrations
           </h1>
         </div>
       </div>
@@ -69,7 +66,7 @@ const page = () => {
         <Footer />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default page;
+export default page

@@ -202,10 +202,10 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    href="/collaborative-initiatives"
+                    href="/collaborative-orchestrations"
                     className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0"
                   >
-                    Collaborative Initiatives
+                    Collaborative Orchestrations
                   </Link>
                 </li>
                 <li>
