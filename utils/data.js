@@ -102,33 +102,33 @@ export const teamData = [
     inUrl: "https://www.linkedin.com/in/arunsivaramakrishnan/",
     xurl: "https://x.com/?lang=en",
   },
-  {
-    id: 7,
-    imageUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image12.png",
-    name: "Atul Kapoor",
-    desc: "Director - Private Sector Engagement for Public Health",
-    inUrl: "",
-    xurl: "https://x.com/?lang=en",
-  },
-  {
-    id: 8,
-    imageUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image08.png",
-    name: "Bhagvath Chandra",
-    desc: "Director - Investment Unit",
-    inUrl: "https://www.linkedin.com/in/bhagvath-chandra-a3756b62/",
-    xurl: "https://x.com/?lang=en",
-  },
-  {
-    id: 9,
-    imageUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image09.png",
-    name: "Chandran Sudarsanam",
-    desc: "Lead - PMO",
-    inUrl: "https://www.linkedin.com/in/chandran-sudarsanam-4252a19/",
-    xurl: "https://x.com/?lang=en",
-  },
+  // {
+  //   id: 7,
+  //   imageUrl:
+  //     "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image12.png",
+  //   name: "Atul Kapoor",
+  //   desc: "Director - Private Sector Engagement for Public Health",
+  //   inUrl: "",
+  //   xurl: "https://x.com/?lang=en",
+  // },
+  // {
+  //   id: 8,
+  //   imageUrl:
+  //     "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image08.png",
+  //   name: "Bhagvath Chandra",
+  //   desc: "Director - Investment Unit",
+  //   inUrl: "https://www.linkedin.com/in/bhagvath-chandra-a3756b62/",
+  //   xurl: "https://x.com/?lang=en",
+  // },
+  // {
+  //   id: 9,
+  //   imageUrl:
+  //     "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image09.png",
+  //   name: "Chandran Sudarsanam",
+  //   desc: "Lead - PMO",
+  //   inUrl: "https://www.linkedin.com/in/chandran-sudarsanam-4252a19/",
+  //   xurl: "https://x.com/?lang=en",
+  // },
   {
     id: 10,
     imageUrl:
@@ -156,15 +156,15 @@ export const teamData = [
     inUrl: "",
     xurl: "https://x.com/?lang=en",
   },
-  {
-    id: 13,
-    imageUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image13.png",
-    name: "Nandlal Narayanan",
-    desc: "Director - HR",
-    inUrl: "https://www.linkedin.com/in/nandlal-narayanan-83b8051/",
-    xurl: "https://x.com/?lang=en",
-  },
+  // {
+  //   id: 13,
+  //   imageUrl:
+  //     "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image13.png",
+  //   name: "Nandlal Narayanan",
+  //   desc: "Director - HR",
+  //   inUrl: "https://www.linkedin.com/in/nandlal-narayanan-83b8051/",
+  //   xurl: "https://x.com/?lang=en",
+  // },
   {
     id: 14,
     imageUrl:
@@ -219,33 +219,33 @@ export const teamData = [
     inUrl: "https://www.linkedin.com/in/siddhi-mankad/",
     xurl: "https://x.com/?lang=en",
   },
-  {
-    id: 21,
-    imageUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image20.png",
-    name: "Sujatha",
-    desc: "Lead - Resource Mobilisation",
-    inUrl: "https://www.linkedin.com/in/sujatha-narasimhan-91511a1/",
-    xurl: "https://x.com/?lang=en",
-  },
-  {
-    id: 22,
-    imageUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image21.png",
-    name: "Vandana Sharma",
-    desc: "Lead - Climate Practice Area",
-    inUrl: "https://www.linkedin.com/in/vandana-sharmab4991/",
-    xurl: "https://x.com/?lang=en",
-  },
-  {
-    id: 23,
-    imageUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image12.png",
-    name: "Vinod",
-    desc: "Admin",
-    inUrl: "",
-    xurl: "https://x.com/?lang=en",
-  },
+  // {
+  //   id: 21,
+  //   imageUrl:
+  //     "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image20.png",
+  //   name: "Sujatha",
+  //   desc: "Lead - Resource Mobilisation",
+  //   inUrl: "https://www.linkedin.com/in/sujatha-narasimhan-91511a1/",
+  //   xurl: "https://x.com/?lang=en",
+  // },
+  // {
+  //   id: 22,
+  //   imageUrl:
+  //     "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image21.png",
+  //   name: "Vandana Sharma",
+  //   desc: "Lead - Climate Practice Area",
+  //   inUrl: "https://www.linkedin.com/in/vandana-sharmab4991/",
+  //   xurl: "https://x.com/?lang=en",
+  // },
+  // {
+  //   id: 23,
+  //   imageUrl:
+  //     "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image12.png",
+  //   name: "Vinod",
+  //   desc: "Admin",
+  //   inUrl: "",
+  //   xurl: "https://x.com/?lang=en",
+  // },
   {
     id: 24,
     imageUrl:
@@ -253,6 +253,15 @@ export const teamData = [
     name: "Vishwanath H S",
     desc: "Director - Social Business",
     inUrl: "https://www.linkedin.com/in/hsvishwanath/",
+    xurl: "https://x.com/?lang=en",
+  },
+  {
+    id: 25,
+    imageUrl:
+      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image12.png",
+    name: "Sulipta Das",
+    desc: "Lead - Climate Action",
+    inUrl: "https://www.linkedin.com/in/sulipta-das-9266855b/",
     xurl: "https://x.com/?lang=en",
   },
 ]
@@ -274,6 +283,15 @@ export const advisorsTeamData = [
     name: "Mr. Subhash Misra",
     desc: "Advisor",
     inUrl: "https://www.linkedin.com/in/subhash-misra-2072737/",
+    xurl: "https://x.com/?lang=en",
+  },
+  {
+    id: 13,
+    imageUrl:
+      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image13.png",
+    name: "Nandlal Narayanan",
+    desc: "Advisor",
+    inUrl: "https://www.linkedin.com/in/nandlal-narayanan-83b8051/",
     xurl: "https://x.com/?lang=en",
   },
 ]
