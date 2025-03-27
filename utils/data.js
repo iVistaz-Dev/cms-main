@@ -2239,7 +2239,7 @@ export const blogsTabs = [
   },
   {
     id: 12,
-    tab: "Evidence for Change",
+    tab: "Evidence for Action",
     path: "62",
   },
   // {

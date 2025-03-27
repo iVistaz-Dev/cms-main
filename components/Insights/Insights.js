@@ -138,8 +138,8 @@ const Insights = () => {
             "Explore the impact of our partnerships with smallholder farmers—read our latest blogs to see how Catalyst Livelihood Ventures is enhancing livelihoods and improving agricultural practices."
           break
         case "62":
-          categoryName = "Evidence for Change"
-          heading = "Evidence for Change"
+          categoryName = "Evidence for Action"
+          heading = "Evidence for Action"
           description =
             "Explore our blogs to gain insights into our work on facilitating theories of change, alternative analysis, results frameworks, and innovative tools."
           break
