@@ -42,24 +42,22 @@ export const tabs = [
   },
 ]
 
-
 const page = () => {
-
   const seoField = {
     title: "Livelihood | Improving livelihoods of vulnerable communities",
     description:
       "Livelihood platform works toward supporting enterprises, vulnerable communities with healthcare and first mile workers with their wellbeing",
     path: "domain-areas/livelihood",
     metaImage: "/social.png",
-    pageType: "WebSite"
-  };
+    pageType: "WebSite",
+  }
   const overviewDesc =
     "We work with vulnerable people who operate as small producers (farms, forests, allied industries, fisheries and MSMEs) to enhance their livelihoods. Our overall objective is to promote wealthy, resilient and responsible small producers at a national scale through inclusive entrepreneurship. Our approach to build wealth for small producers focuses on having effective market engagement and co-creating business solutions that benefit both businesses and small producers."
   return (
     <>
       <div className="bg-[url('https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/domainAreas/livelihood/banner.png')] h-[420px] md:h-[640px] bg-cover bg-center pt-5 flex flex-col">
         <div className="w-full">
-          <Seo {...seoField}/>
+          <Seo {...seoField} />
           <Header />
         </div>
         <div className="md:ps-24 flex justify-center md:justify-start items-end h-full">

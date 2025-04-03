@@ -149,8 +149,7 @@ export const teamData = [
   },
   {
     id: 12,
-    imageUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image12.png",
+    imageUrl: "/aboutUs/team/ManojSingh.png",
     name: "Manoj Singh",
     desc: "Lead - HR",
     inUrl: "",
