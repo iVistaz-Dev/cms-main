@@ -256,8 +256,7 @@ export const teamData = [
   },
   {
     id: 25,
-    imageUrl:
-      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image12.png",
+    imageUrl: "/aboutUs/team/sulipta.jpg",
     name: "Sulipta Das",
     desc: "Lead - Climate Action",
     inUrl: "https://www.linkedin.com/in/sulipta-das-9266855b/",
