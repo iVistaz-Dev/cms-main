@@ -152,7 +152,7 @@ export const teamData = [
     imageUrl: "/aboutUs/team/ManojSingh.png",
     name: "Manoj Singh",
     desc: "Lead - HR",
-    inUrl: "",
+    inUrl: "https://www.linkedin.com/in/manojsulu/ ",
     xurl: "https://x.com/?lang=en",
   },
   // {
