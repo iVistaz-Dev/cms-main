@@ -1415,6 +1415,15 @@ export const collaborativeInitiativesData = [
     path: "https://catalysingsocialimpact.in/",
     link: "catalysingSocialImpact",
   },
+  {
+    id: 3,
+    imageUrl: "/collaborativeInitiatives/mb100.png",
+    logoUrl: "",
+    title: "Meaningful Business",
+    desc: "The MB100 India Chapter unites visionary leaders and purpose-driven businesses to strengthen India’s social entrepreneurship ecosystem. Our mission is to amplify impact by fostering collaboration, championing innovation, and enabling sustainable, profit-with-purpose growth.",
+    path: "https://mb.cms.org.in/",
+    link: "meaningfulBusiness",
+  },
 ]
 
 export const scaleAcceleratorsData = [

@@ -16,6 +16,11 @@ export const tabs = [
     tab: "Catalysing Social Impact (CSI)",
     link: "catalysingSocialImpact",
   },
+  {
+    id: 3,
+    tab: "Meaningful Business",
+    link: "meaningfulBusiness",
+  },
 ]
 
 const page = () => {
