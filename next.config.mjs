@@ -36,6 +36,11 @@ const nextConfig = {
         destination: "https://esg.cms.org.in/",
         permanent: true,
       },
+      {
+        source: "/mb100",
+        destination: "https://mb.cms.org.in/",
+        permanent: true,
+      },
     ]
   },
 }

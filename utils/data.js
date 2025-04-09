@@ -1421,7 +1421,7 @@ export const collaborativeInitiativesData = [
     logoUrl: "",
     title: "Meaningful Business",
     desc: "The MB100 India Chapter unites visionary leaders and purpose-driven businesses to strengthen India’s social entrepreneurship ecosystem. Our mission is to amplify impact by fostering collaboration, championing innovation, and enabling sustainable, profit-with-purpose growth.",
-    path: "https://mb.cms.org.in/",
+    path: "/mb100",
     link: "meaningfulBusiness",
   },
 ]
