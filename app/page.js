@@ -11,7 +11,7 @@ export default function Home() {
     title: "Integrated solutions to shape social equity | CMS",
     description:
       "We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration.",
-    path: "/",
+    path: "",
     metaImage: "/social.png",
     pageType: "WebSite",
   }

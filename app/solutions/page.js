@@ -28,7 +28,7 @@ const page = () => {
     title: "Effective Solutions for Scalable and Sustainable Development",
     description:
       "Collaborate with change agents to design, implement, and scale evidence-based solutions that drive impactful, sustainable growth and enhance social equity.",
-    path: "/solutions",
+    path: "solutions",
     metaImage: "/social.png",
     pageType: "WebSite",
   }

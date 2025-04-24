@@ -14,7 +14,7 @@ function NextSeo({ title, description, path, metaImage }) {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {/* <meta name="robots" content="index, follow" /> */}
       <link rel="icon" href="/images/cms_favicon-150x150.png" />
-      <link rel="canonical" href={`${domainName}${path}`} />
+      <link rel="canonical" href={`${domainName}/${path}`} />
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
