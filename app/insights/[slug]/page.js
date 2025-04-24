@@ -4,6 +4,8 @@ import axios from "axios"
 import configData from "@/config"
 
 async function fetchPostData(slug) {
+  let domainName = "https://cms.org.in"
+
   try {
     const response = await axios.get(
       `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&slug=${slug}`
@@ -18,7 +20,7 @@ async function fetchPostData(slug) {
         metaDescription:
           postData.acf?.meta_description ||
           "We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration.",
-        canonical: `${configData.websiteMainUrl}insights/${slug}`,
+        canonical: `${domainName}/insights/${slug}`,
         metaImage:
           postData.acf?.post_desktop_images?.url ||
           `${configData.websiteMainUrl}/images/cms-logo.png`,
@@ -32,7 +34,7 @@ async function fetchPostData(slug) {
   return {
     metaTitle: "Default Meta Title",
     metaDescription: "Default meta description",
-    canonical: `${configData.websiteMainUrl}/insights/${slug}`,
+    canonical: `${domainName}/insights/${slug}`,
   }
 }
 

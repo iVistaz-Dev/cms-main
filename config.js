@@ -1,5 +1,5 @@
 const config = {
-  websiteMainUrl: "https://www.cms.org.in/",
+  websiteMainUrl: "https://cms.org.in/",
   SERVER_URL: "https://docs.cms.org.in/wp-json/wp/v2/",
 
   LIVE_PRODUCTION_SERVER_ID: "90",
