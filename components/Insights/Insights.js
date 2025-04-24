@@ -7,6 +7,7 @@ import axios from "axios"
 import Link from "next/link"
 import { blogsTabs } from "@/utils/data"
 import { FallingLines } from "react-loader-spinner"
+import config from "@/config"
 
 const Insights = () => {
   const [activeTab, setActiveTab] = useState(blogsTabs[0].path)
@@ -46,9 +47,32 @@ const Insights = () => {
   const fetchDataForCategory = async (category, pageNumber = 1) => {
     setLoading(true)
     try {
-      const response = await axios.get(
-        `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}`
-      )
+      // const response = await axios.get(
+      //   `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}`
+      // )
+
+      const domain =
+        typeof window !== "undefined" ? window.location.hostname : ""
+
+      let server
+
+      if (
+        domain === config.LIVE_SITE_URL ||
+        domain === config.LIVE_SITE_URL_WWW
+      ) {
+        server = config.LIVE_PRODUCTION_SERVER_ID
+      } else if (domain === config.STAGING_SITE_URL) {
+        server = config.STAG_PRODUCTION_SERVER_ID
+      } else {
+        server = config.STAG_PRODUCTION_SERVER_ID
+      }
+
+      // const url = `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production_mode[]=${server}`
+      const url = `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production-mode[]=${server}`
+      console.log("URL", url)
+      console.log("Domain:", domain, "Server ID:", server)
+
+      const response = await axios.get(url)
 
       console.log(response)
 
