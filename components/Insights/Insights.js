@@ -56,12 +56,17 @@ const Insights = () => {
 
       let server
 
+      // console.log(domain)
+
       if (
         domain === config.LIVE_SITE_URL ||
         domain === config.LIVE_SITE_URL_WWW
       ) {
         server = config.LIVE_PRODUCTION_SERVER_ID
-      } else if (domain === config.STAGING_SITE_URL) {
+      } else if (
+        domain === config.STAGING_SITE_URL ||
+        domain === config.LOCAL_SITE_URL
+      ) {
         server = config.STAG_PRODUCTION_SERVER_ID
       } else {
         server = config.STAG_PRODUCTION_SERVER_ID
@@ -69,12 +74,12 @@ const Insights = () => {
 
       // const url = `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production_mode[]=${server}`
       const url = `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production-mode[]=${server}`
-      console.log("URL", url)
-      console.log("Domain:", domain, "Server ID:", server)
+      // console.log("URL", url)
+      // console.log("Domain:", domain, "Server ID:", server)
 
       const response = await axios.get(url)
 
-      console.log(response)
+      // console.log(response)
 
       let categoryName
       let heading
@@ -210,7 +215,7 @@ const Insights = () => {
           }
         })
 
-        console.log("formattedData", formattedData)
+        // console.log("formattedData", formattedData)
         setInsightsData((prevData) =>
           pageNumber === 1 ? formattedData : [...prevData, ...formattedData]
         )
