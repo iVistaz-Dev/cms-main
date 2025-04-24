@@ -5,17 +5,19 @@ import Impact from "@/components/Home/Impact/Impact"
 import Solutions from "@/components/Home/Solutions/Solutions"
 import Footer from "@/components/Footer/Footer"
 import Seo from "../components/Seo/Seo"
+
 export default function Home() {
   const seoField = {
     title: "Integrated solutions to shape social equity | CMS",
     description:
       "We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration.",
-    path: "",
+    path: "/",
     metaImage: "/social.png",
     pageType: "WebSite",
   }
   return (
     <>
+      <Seo {...seoField} />
       <div className="relative flex flex-col justify-center md:justify-end h-[275px] bg-center bg-cover py-10 md:py-16 sm:h-[500px]">
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"
@@ -26,7 +28,6 @@ export default function Home() {
           playsInline
         ></video>
         <div className="relative z-10">
-          <Seo {...seoField} />
           <Header />
           {/* <div className="ps-2 md:ps-24">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white text-center sm:text-left">

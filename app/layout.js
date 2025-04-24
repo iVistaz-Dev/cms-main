@@ -5,8 +5,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="robots" content="index, follow" />
-        {/* <meta name="msvalidate.01" content="A827D56A91561DA21E2E94273F4D52D5" /> */}
-        {/* <link rel="canonical" href="https://cms.org.in/" /> */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

@@ -4,6 +4,8 @@ import React from "react"
 import configData from "../../config"
 
 function NextSeo({ title, description, path, metaImage }) {
+  const domainName = typeof window !== "undefined" ? window.location.origin : ""
+
   return (
     <head>
       <meta charSet="utf-8" />
@@ -11,8 +13,8 @@ function NextSeo({ title, description, path, metaImage }) {
       <meta name="description" content={description} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {/* <meta name="robots" content="index, follow" /> */}
-      <link rel="icon" href="/images/cac_favicon-150x150.png" />
-      <link rel="canonical" href={`${configData.websiteMainUrl}${path}`} />
+      <link rel="icon" href="/images/cms_favicon-150x150.png" />
+      <link rel="canonical" href={`${domainName}${path}`} />
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
