@@ -9,28 +9,26 @@ import {
   FacebookShareButton,
   TwitterShareButton,
   LinkedinShareButton,
+  FacebookIcon,
+  LinkedinIcon,
+  XIcon,
 } from "react-share"
-
-import { FacebookIcon, LinkedinIcon, XIcon } from "react-share"
 import { linkIcon } from "@/utils/icon"
 
 const InsightDetails = ({ myUrl }) => {
   const [insightsData, setInsightsData] = useState([])
   const [copySuccess, setCopySuccess] = useState(false)
-  const [loading, setLoading] = useState(true) // Loader state
+  const [loading, setLoading] = useState(true)
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(`https://cms.org.in/insights/${myUrl}`)
     setCopySuccess(true)
-
-    setTimeout(() => {
-      setCopySuccess(false)
-    }, 3000)
+    setTimeout(() => setCopySuccess(false), 3000)
   }
 
   useEffect(() => {
     const fetchData = async () => {
-      setLoading(true) // Show loader
+      setLoading(true)
       try {
         const response = await axios.get(
           `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&slug=${myUrl}`
@@ -50,7 +48,7 @@ const InsightDetails = ({ myUrl }) => {
       } catch (error) {
         console.error("Error fetching data:", error)
       }
-      setLoading(false) // Hide loader
+      setLoading(false)
     }
 
     fetchData()
@@ -59,12 +57,7 @@ const InsightDetails = ({ myUrl }) => {
   if (loading) {
     return (
       <div className="flex justify-center items-center h-screen">
-        <FallingLines
-          color="#7F3F98"
-          width="100"
-          visible={true}
-          ariaLabel="falling-lines-loading"
-        />
+        <FallingLines color="#7F3F98" width="100" visible={true} />
       </div>
     )
   }
@@ -99,28 +92,31 @@ const InsightDetails = ({ myUrl }) => {
               <div className="flex justify-end items-center space-x-4 mt-3">
                 <p className="text-[#1A1A1A] text-lg">Share on</p>
 
-                <FacebookShareButton url={myUrl} quote={item.title}>
+                <FacebookShareButton
+                  url={`https://cms.org.in/insights/${myUrl}`}
+                  quote={item.title}
+                >
                   <FacebookIcon size={32} round />
                 </FacebookShareButton>
 
-                <TwitterShareButton url={myUrl} title={item.title}>
+                <TwitterShareButton
+                  url={`https://cms.org.in/insights/${myUrl}`}
+                  title={item.title}
+                >
                   <XIcon size={32} round />
                 </TwitterShareButton>
 
-                <LinkedinShareButton url={myUrl} title={item.title}>
+                <LinkedinShareButton
+                  url={`https://cms.org.in/insights/${myUrl}`}
+                  title={item.title}
+                >
                   <LinkedinIcon size={32} round />
                 </LinkedinShareButton>
 
                 <button onClick={handleCopyLink}>{linkIcon}</button>
 
                 {copySuccess && (
-                  <span
-                    className="ml-2 text-cms-primary-green fixed bottom-10 right-10 p-2 bg-white border border-green-500 rounded-md shadow-lg transition-opacity duration-1000 ease-in-out opacity-100"
-                    style={{
-                      animation: "fadeOut 1s forwards",
-                      animationDelay: "2s",
-                    }}
-                  >
+                  <span className="ml-2 text-cms-primary-green fixed bottom-10 right-10 p-2 bg-white border border-green-500 rounded-md shadow-lg transition-opacity duration-1000 ease-in-out opacity-100">
                     Link copied!
                   </span>
                 )}

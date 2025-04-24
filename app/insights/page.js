@@ -32,7 +32,8 @@ const page = () => {
     description:
       "Our blogs detail our various partnerships that facilitate sustainable change",
     path: "insights",
-    metaImage: "/social.png",
+    metaImage:
+      "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/insights/banner.png",
     pageType: "WebSite",
   }
   return (

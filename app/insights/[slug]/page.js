@@ -19,6 +19,9 @@ async function fetchPostData(slug) {
           postData.acf?.meta_description ||
           "We devise integrated solutions for complex problems to achieve social equity for vulnerable groups through partner collaboration.",
         canonical: `${configData.websiteMainUrl}insights/${slug}`,
+        metaImage:
+          postData.acf?.post_desktop_images?.url ||
+          `${configData.websiteMainUrl}/images/cms-logo.png`,
       }
     }
     console.warn("No ACF data found for the given slug")
@@ -35,7 +38,8 @@ async function fetchPostData(slug) {
 
 const Page = async ({ params }) => {
   const { slug } = params
-  const { metaTitle, metaDescription, canonical } = await fetchPostData(slug)
+  const { metaTitle, metaDescription, canonical, metaImage } =
+    await fetchPostData(slug)
 
   return (
     <>
@@ -53,8 +57,8 @@ const Page = async ({ params }) => {
         <meta property="og:description" content={metaDescription} />
         <meta property="og:url" content={canonical} />
         <meta property="og:site_name" content="CMS" />
-        <meta property="og:image" content="/images/og_image.png" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:image" content={metaImage} />
+        <meta name="twitter:card" content={metaImage} />
 
         <script
           type="application/ld+json"
