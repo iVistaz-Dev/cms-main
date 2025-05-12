@@ -35,6 +35,8 @@ const InsightDetails = ({ myUrl }) => {
         const response = await axios.get(
           `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&slug=${myUrl}`
         )
+
+        console.log("API Response:", response.data)
         const formattedData = response.data.map((item) => ({
           id: item.id,
           imageUrl: item.acf?.post_desktop_images?.url || "/postBanner.png",
@@ -46,6 +48,7 @@ const InsightDetails = ({ myUrl }) => {
           metaDesc: item.acf.meta_description,
           authorName: item.acf.author_name,
         }))
+        console.log("Formatted Data:", formattedData)
         setInsightsData(formattedData)
       } catch (error) {
         console.error("Error fetching data:", error)

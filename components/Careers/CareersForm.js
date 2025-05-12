@@ -1,7 +1,5 @@
 "use client"
 
-import Footer from "@/components/Footer/Footer"
-import Header from "@/components/Header/Header"
 import { uploadIcon } from "@/utils/icon"
 import Image from "next/image"
 import Link from "next/link"
@@ -10,7 +8,7 @@ import axios from "axios"
 
 const CareersForm = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    your_name: "",
     position: "",
     email: "",
     file: null,
@@ -22,7 +20,7 @@ const CareersForm = () => {
 
   const validateForm = () => {
     let formErrors = {}
-    if (!formData.name) formErrors.name = "Name is required"
+    if (!formData.your_name) formErrors.your_name = "Name is required"
     if (!formData.position) formErrors.position = "Position is required"
     if (!formData.email) {
       formErrors.email = "Email is required"
@@ -48,14 +46,14 @@ const CareersForm = () => {
     if (Object.keys(formErrors).length === 0) {
       try {
         const data = new FormData()
-        data.append("name", formData.name)
+        data.append("your_name", formData.your_name)
         data.append("position", formData.position)
         data.append("email", formData.email)
         data.append("file", formData.file)
         data.append("consent", formData.consent)
 
         const response = await axios.post(
-          "https://docs.cms.org.in/wp-json/contact-form-7/v1/contact-forms/10426/feedback",
+          "https://docs.cms.org.in/wp-json/contact-form-7/v1/contact-forms/10230/feedback",
           data,
           {
             headers: {
@@ -66,7 +64,7 @@ const CareersForm = () => {
 
         console.log("Form Data Submitted:", response.data)
         setFormData({
-          name: "",
+          your_name: "",
           position: "",
           email: "",
           file: null,
@@ -127,14 +125,14 @@ const CareersForm = () => {
                 <div>
                   <input
                     type="text"
-                    name="name"
+                    name="your_name"
                     placeholder="Name"
                     className="p-2 border border-gray-300 rounded w-full"
-                    value={formData.name}
+                    value={formData.your_name}
                     onChange={handleChange}
                   />
-                  {errors.name && (
-                    <p className="text-red-500 text-sm">{errors.name}</p>
+                  {errors.your_name && (
+                    <p className="text-red-500 text-sm">{errors.your_name}</p>
                   )}
                 </div>
 
@@ -170,8 +168,12 @@ const CareersForm = () => {
                     </option>
                     <option value="esg">ESG</option>
                     <option value="designForSuccess">Design for Success</option>
-                    <option value="evidenceForChange">Evidence for Change</option>
-                    <option value="implementForScale">Implement for Scale</option>
+                    <option value="evidenceForChange">
+                      Evidence for Change
+                    </option>
+                    <option value="implementForScale">
+                      Implement for Scale
+                    </option>
                     <option value="catalystLivelihoodVentures">
                       Catalyst Livelihood Ventures
                     </option>

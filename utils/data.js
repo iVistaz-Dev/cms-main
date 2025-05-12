@@ -2274,11 +2274,11 @@ export const blogsTabs = [
     tab: "Wellbeing for Workforce",
     path: "72",
   },
-  {
-    id: 10,
-    tab: "Shoonya",
-    path: "80",
-  },
+  // {
+  //   id: 10,
+  //   tab: "Shoonya",
+  //   path: "80",
+  // },
   // {
   //   id: 6,
   //   tab: "Leveraging Assets",
@@ -2298,7 +2298,7 @@ export const blogsTabs = [
   {
     id: 11,
     tab: "CLV",
-    path: "86",
+    path: "84",
   },
 
   // {
@@ -2315,7 +2315,7 @@ export const blogsTabs = [
   {
     id: 16,
     tab: "CSI2019",
-    path: "87",
+    path: "85",
   },
 ]
 

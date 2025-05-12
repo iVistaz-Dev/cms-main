@@ -47,16 +47,9 @@ const Insights = () => {
   const fetchDataForCategory = async (category, pageNumber = 1) => {
     setLoading(true)
     try {
-      // const response = await axios.get(
-      //   `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}`
-      // )
-
-      const domain =
-        typeof window !== "undefined" ? window.location.hostname : ""
+      const domain = typeof window !== "undefined" ? window.location.origin : ""
 
       let server
-
-      // console.log(domain)
 
       if (
         domain === config.LIVE_SITE_URL ||
@@ -71,40 +64,32 @@ const Insights = () => {
       } else {
         server = config.STAG_PRODUCTION_SERVER_ID
       }
-
       // const url = `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production_mode[]=${server}`
-      //const url = `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production-mode[]=${server}`
+      const url = `${config.SERVER_URL}posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production[]=${server}`
+
       // console.log("URL", url)
       // console.log("Domain:", domain, "Server ID:", server)
 
       const response = await axios.get(url)
 
-      // console.log(response)
-
-      let categoryName
-      let heading
-      let description
+      let categoryName, heading, description
       switch (category) {
         case "16":
-          categoryName = "Blog"
-          heading = "Blog"
+          categoryName = heading = "Blog"
           description = ""
           break
         case "59":
-          categoryName = "Design for Success"
-          heading = "Design for Success"
+          categoryName = heading = "Design for Success"
           description =
             "Discover how our human-centric designs blend agile methodologies and strategic planning to tackle societal challenges. Dive into our blogs to see the impact of our work!"
           break
         case "69":
-          categoryName = "Livelihood"
-          heading = "Livelihood"
+          categoryName = heading = "Livelihood"
           description =
             "Discover more insights and stories on enhancing livelihoods—read our blogs detailing our work with small producers across various sectors."
           break
         case "71":
-          categoryName = "Health"
-          heading = "Health"
+          categoryName = heading = "Health"
           description =
             "Explore our blogs, where we share insights and stories on advancing health and well-being in vulnerable communities."
           break
@@ -114,8 +99,7 @@ const Insights = () => {
         //   description = ""
         //   break
         case "72":
-          categoryName = "Wellbeing for Workforce"
-          heading = "Wellbeing for Workforce"
+          categoryName = heading = "Wellbeing for Workforce"
           description =
             "Discover more about our initiatives and read inspiring stories from the field by exploring our blogs on worker wellbeing."
           break
@@ -125,31 +109,28 @@ const Insights = () => {
         //   description = ""
         //   break
         case "64":
-          categoryName = "Community Engagement"
-          heading = "Community Engagement"
+          categoryName = heading = "Community Engagement"
           description = "Explore our latest blogs on Community Engagement"
           break
-        case "80":
-          categoryName = "Shoonya"
-          heading = "Shoonya"
-          description =
-            "Discover more about how we're enabling transformations in the value chains for sustainability—read our blogs on Shoonya's impactful work and achievements."
-          break
+        // case "80":
+        //   categoryName = "Shoonya"
+        //   heading = "Shoonya"
+        //   description =
+        //     "Discover more about how we're enabling transformations in the value chains for sustainability—read our blogs on Shoonya's impactful work and achievements."
+        //   break
         case "26":
-          categoryName = "Our Incubatees"
-          heading = "Our Incubatees"
+          categoryName = heading = "Our Incubatees"
           description = ""
           break
         case "6":
-          categoryName = "Our Teams"
-          heading = "Our Teams"
+          categoryName = heading = "Our Teams"
           description = ""
           break
-        case "63":
-          categoryName = "TechTonic"
-          heading = "TechTonic"
-          description = ""
-          break
+        // case "63":
+        //   categoryName = "TechTonic"
+        //   heading = "TechTonic"
+        //   description = ""
+        //   break
         // case "78":
         //   categoryName = "Transforming Investments monitor for results"
         //   heading = "Transforming Investments monitor for results"
@@ -160,33 +141,29 @@ const Insights = () => {
         //   heading = "Monitor for Results"
         //   description = ""
         //   break
-        case "86":
+        case "84":
           categoryName = "CLV"
           heading = "Catalyst Livelihood Ventures"
           description =
             "Explore the impact of our partnerships with smallholder farmers—read our latest blogs to see how Catalyst Livelihood Ventures is enhancing livelihoods and improving agricultural practices."
           break
         case "62":
-          categoryName = "Evidence for Action"
-          heading = "Evidence for Action"
+          categoryName = heading = "Evidence for Action"
           description =
             "Explore our blogs to gain insights into our work on facilitating theories of change, alternative analysis, results frameworks, and innovative tools."
           break
         case "77":
-          categoryName = "Climate"
-          heading = "Climate"
+          categoryName = heading = "Climate"
           description =
             "Explore our blogs to see we are working towards powering resilient, carbon-neutral systems and strengthening climate action."
           break
-        case "87":
-          categoryName = "CSI2019"
-          heading = "CSI2019"
+        case "85":
+          categoryName = heading = "CSI2019"
           description =
             "Explore our blog for the latest insights on Catalysing Social Impact (CSI)"
           break
         default:
-          categoryName = "Blogs"
-          heading = "Blogs"
+          categoryName = heading = "Blogs"
           description = ""
           break
       }
@@ -206,19 +183,19 @@ const Insights = () => {
 
           return {
             id: item.id,
-            imageUrl: item._embedded["wp:featuredmedia"][0].source_url,
+            imageUrl: item._embedded["wp:featuredmedia"]?.[0]?.source_url || "",
             category: categoryName,
             title: item.title.rendered,
             slug: item.slug,
             desc: item.excerpt.rendered.replace(/<[^>]+>/g, ""),
-            date: postDate, // Added date here
+            date: postDate,
           }
         })
 
-        // console.log("formattedData", formattedData)
         setInsightsData((prevData) =>
           pageNumber === 1 ? formattedData : [...prevData, ...formattedData]
         )
+
         if (response.data.length < 10) setHasMore(false)
       }
     } catch (error) {
