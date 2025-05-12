@@ -58,17 +58,17 @@ const Insights = () => {
         domain === config.LIVE_SITE_URL ||
         domain === config.LIVE_SITE_URL_WWW
       ) {
-        alert("live")
+        // alert("LIVE environment")
         server = config.LIVE_PRODUCTION_SERVER_ID
-      } else if (domain === config.STAGING_SITE_URL) {
-        alert("staging and local test")
-        server = config.STAG_PRODUCTION_SERVER_ID
       } else {
+        // alert("STAGING or LOCAL environment")
         server = config.STAG_PRODUCTION_SERVER_ID
       }
 
-      // const url = `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production_mode[]=${server}`
       const url = `${config.SERVER_URL}posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production[]=${server}`
+
+      // const url = `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production_mode[]=${server}`
+      // const url = `${config.SERVER_URL}posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production[]=${server}`
 
       // console.log("URL", url)
       // console.log("Domain:", domain, "Server ID:", server)
