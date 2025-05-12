@@ -79,7 +79,7 @@ export const teamData = [
     id: 4,
     imageUrl:
       "https://s3.ap-south-1.amazonaws.com/com.cg.ivista.mediafiles/cms-origin/cms-website/public/aboutUs/team/image04.png",
-    name: "Abdul Laheef P",
+    name: "Abdul Latheef P",
     desc: "Lead - Community Engagement",
     inUrl: "https://www.linkedin.com/in/abhiperne/",
     xurl: "https://x.com/?lang=en",
