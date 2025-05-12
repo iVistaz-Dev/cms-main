@@ -20,12 +20,15 @@ const Insights = () => {
   const [description, setDescription] = useState("")
 
   useEffect(() => {
-    // Load the active tab from sessionStorage if available
     const savedTab = sessionStorage.getItem("activeTab")
-    const initialTab = savedTab || blogsTabs[0].path // Default to first tab if no saved tab
+    const initialTab = savedTab || blogsTabs[0].path
     setActiveTab(initialTab)
-    fetchDataForCategory(initialTab, 1) // Fetch data for the initial tab
+    fetchDataForCategory(initialTab, 1)
   }, [])
+
+  useEffect(() => {
+    fetchDataForCategory(activeTab, 1)
+  }, [activeTab])
 
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen)
 
@@ -55,15 +58,15 @@ const Insights = () => {
         domain === config.LIVE_SITE_URL ||
         domain === config.LIVE_SITE_URL_WWW
       ) {
+        alert("live")
         server = config.LIVE_PRODUCTION_SERVER_ID
-      } else if (
-        domain === config.STAGING_SITE_URL ||
-        domain === config.LOCAL_SITE_URL
-      ) {
+      } else if (domain === config.STAGING_SITE_URL) {
+        alert("staging and local test")
         server = config.STAG_PRODUCTION_SERVER_ID
       } else {
         server = config.STAG_PRODUCTION_SERVER_ID
       }
+
       // const url = `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production_mode[]=${server}`
       const url = `${config.SERVER_URL}posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production[]=${server}`
 
