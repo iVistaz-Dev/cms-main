@@ -50,18 +50,24 @@ const Insights = () => {
   const fetchDataForCategory = async (category, pageNumber = 1) => {
     setLoading(true)
     try {
-      const domain = typeof window !== "undefined" ? window.location.origin : ""
+      let domain = typeof window !== "undefined" ? window.location.origin : ""
+      domain = domain.replace(/\/$/, "") // Remove trailing slash
+
+      const configNormalized = {
+        LIVE_SITE_URL: config.LIVE_SITE_URL.replace(/\/$/, ""),
+        LIVE_SITE_URL_WWW: config.LIVE_SITE_URL_WWW.replace(/\/$/, ""),
+      }
 
       let server
 
       if (
-        domain === config.LIVE_SITE_URL ||
-        domain === config.LIVE_SITE_URL_WWW
+        domain === configNormalized.LIVE_SITE_URL ||
+        domain === configNormalized.LIVE_SITE_URL_WWW
       ) {
-        // alert("LIVE environment")
+        console.log("LIVE environment")
         server = config.LIVE_PRODUCTION_SERVER_ID
       } else {
-        // alert("STAGING or LOCAL environment")
+        console.log("STAGING or LOCAL environment")
         server = config.STAG_PRODUCTION_SERVER_ID
       }
 
