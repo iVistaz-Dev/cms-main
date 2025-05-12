@@ -7,8 +7,8 @@ const config = {
 
   LIVE_SITE_URL: "https://cms.org.in/",
   LIVE_SITE_URL_WWW: "https://www.cms.org.in/",
-  // STAGING_SITE_URL: "https://staging.cms.org.in/",
-  STAGING_SITE_URL: "http://localhost:3020/",
+  STAGING_SITE_URL: "https://staging.cms.org.in/",
+  //STAGING_SITE_URL: "http://localhost:3020/",
   LOCAL_SITE_URL: "http://localhost:3020/",
 }
 
