@@ -73,7 +73,7 @@ const Insights = () => {
       }
 
       // const url = `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production_mode[]=${server}`
-      const url = `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production-mode[]=${server}`
+      //const url = `https://docs.cms.org.in/wp-json/wp/v2/posts?_embed&categories=${category}&status=publish&page=${pageNumber}&production-mode[]=${server}`
       // console.log("URL", url)
       // console.log("Domain:", domain, "Server ID:", server)
 
