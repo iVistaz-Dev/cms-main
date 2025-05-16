@@ -36,9 +36,9 @@ const JobListing = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://docs.cms.org.in/wp-json/wp/v2/career_openings_now?_embed&status=publish"
+          "https://docs.cms.org.in/wp-json/wp/v2/career_openings"
         )
-        console.log(response)
+        //console.log(response)
 
         if (response.data.length === 0) {
           setIsOpening(false)
@@ -52,7 +52,7 @@ const JobListing = () => {
             }
           })
 
-          console.log(formattedData)
+          //console.log(formattedData)
           setOpenings([...formattedData])
           setIsOpening(true)
         }
